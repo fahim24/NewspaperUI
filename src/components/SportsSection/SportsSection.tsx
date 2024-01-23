@@ -1,68 +1,65 @@
-import Adtype2 from "../Ads/AdType2/Adtype2";
-import NewsType1 from "../News/NewsType/NewsType1";
-import Down from "../../assets/caret-down.svg";
-import NewsType3 from "../News/NewsType/NewsType3";
+import AD4 from "../../assets/images/ads/ad4.png";
+import NC5 from "../../assets/images/News/newsCover5.jpg";
+import NC6 from "../../assets/images/News/newsCover6.jpg";
+import NC7 from "../../assets/images/News/newsCover7.jpg";
+import NC8 from "../../assets/images/News/newsCover8.jpg";
+
+import NewsType2 from "../News/NewsType/NewsType2";
+import NewsType4 from "../News/NewsType/NewsType4";
+import NewsType5 from "../News/NewsType/NewsType5";
 
 const SportsSection = () => {
 	return (
-		<div className="w-11/12 md:w-10/12 mx-auto">
-			<div className="flex items-center justify-around my-5 ">
-				<div className="border border-solid border-gray-200 m-2 w-full"> </div>
-				<h1 className="text-xl font-bold hover:text-orange-400">খেলাধুলা</h1>
-				<div className="border border-solid border-gray-200 m-2 w-full"> </div>
-			</div>
-
-			<div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-3 ">
-				<div className="col-span-2 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-3 ">
-					<div className="col-span-2 border-r-2  border-solid border-gray-200 pr-4 py-4">
-						<NewsType3></NewsType3>
-					</div>
-					<div className="border-r-2 pr-2 md:border-b-2 border-solid border-gray-200 md:mb-2">
-						<NewsType1></NewsType1>
-					</div>
-					<div className="md:border-r-2 border-solid border-gray-200 md:pr-2">
-						<NewsType1></NewsType1>
-					</div>
-					<div className="border-r-2 pr-2 border-solid border-gray-200">
-						<NewsType1></NewsType1>
-					</div>
-					<div className="md:border-l-2 border-solid border-gray-200 md:pl-2">
-						<NewsType1></NewsType1>
-					</div>
+		<section>
+			<div className="w-[1280px] mx-auto ">
+				{/* Section Head */}
+				<div className="flex justify-center items-center gap-[24px] my-[24px]">
+					<div className="border border-solid border-ClGray w-full"> </div>
+					<div className="text-COrange items-center text-2xl font-bold">খেলাধুলা</div>
+					<div className="border border-solid border-ClGray w-full"> </div>
 				</div>
-
-				<div className="border-l-2 border-solid border-gray-200 pl-2">
-					<div className="border-b-2 border-solid border-gray-200 px-2 mb-4">
-						<div className="my-2 border-b-2 border-solid border-gray-200 p-2">
-							<h1 className="text-md font-semibold">আমার এলাকার খবর</h1>
+				{/* Section Body */}
+				<div className="flex gap-[16px]">
+					{/* News Section */}
+					<div className="flex flex-col gap-[16px]">
+						{/* News Row-1 */}
+						<div className="flex gap-[16px]">
+							<div className="w-[624px] h-[350px]">
+								<NewsType4></NewsType4>
+							</div>
+							<div className="border border-solid border-ClGray h-full "></div>
+							<div className="flex flex-col item-start gap-[16px]">
+								<img src={NC8} alt="" className="h-[166px] w-[296px]" />
+								<NewsType5></NewsType5>
+							</div>
 						</div>
-
-						<button className="inline-flex justify-around w-full p-2 text-sm text-gray-500 bg-white border border-gray-200 rounded-md my-2">
-							<span>বিভাগ</span>
-							<span className="w-5 h-5 ">
-								<img src={Down} alt="" />
-							</span>
-						</button>
-						<button className="inline-flex justify-around w-full p-2 text-sm text-gray-500 bg-white border border-gray-200 rounded-md my-2">
-							<span className="mr-2">জেলা</span>
-							<span className="w-5 h-5">
-								<img src={Down} alt="" />
-							</span>
-						</button>
-						<button className="inline-flex justify-around w-full p-2 text-sm text-gray-500 bg-white border border-gray-200 rounded-md my-2">
-							<span className="mr-2">উপজেলা</span>
-							<span className="w-5 h-5">
-								<img src={Down} alt="" />
-							</span>
-						</button>
-						<button className="text-white text-sm whitespace-nowrap w-full py-2 bg-orange-400 rounded-md my-2">
-							খুঁজুন
-						</button>
+						<div className="border border-solid border-ClGray "></div>
+						{/* News Row-2 */}
+						<div className="flex gap-[16px]">
+							<div className="flex flex-col item-start gap-[16px]">
+								<img src={NC5} alt="" className="h-[166px] w-[296px]" />
+								<NewsType2></NewsType2>
+							</div>
+							<div className="border border-solid border-ClGray h-full "></div>
+							<div className="flex flex-col item-start gap-[16px]">
+								<img src={NC6} alt="" className="h-[166px] w-[296px]" />
+								<NewsType2></NewsType2>
+							</div>
+							<div className="border border-solid border-ClGray h-full "></div>
+							<div className="flex flex-col item-start gap-[16px]">
+								<img src={NC7} alt="" className="h-[166px] w-[296px]" />
+								<NewsType2></NewsType2>
+							</div>
+						</div>
 					</div>
-					<Adtype2></Adtype2>
+					{/* Side Section */}
+					<div>
+						<div>f</div>
+						<img src={AD4} alt="" className="w-[296px] h-[246px]" />
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

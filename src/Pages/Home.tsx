@@ -1,28 +1,28 @@
-import Videos from "../components/Videos/Videos";
-import AdType1 from "../components/Ads/AdType1/AdType1";
-import BottomSection from "../components/BottomSection/BottomSection";
-import EnterTainment from "../components/Entertainment/EnterTainment";
-import Life from "../components/Life/Life";
-import Reviews from "../components/Reviews/Reviews";
-import SportsSection from "../components/SportsSection/SportsSection";
 import TopSection from "../components/TopSection/TopSection";
-import PhotoGalary from "../components/PhotoGalary/PhotoGalary";
+import SportsSection from "../components/SportsSection/SportsSection";
+import EnterTainment from "../components/Entertainment/EnterTainment";
+import PhotoGallery from "../components/PhotoGallery/PhotoGallery";
+import Videos from "../components/Videos/Videos";
+import Reviews from "../components/Reviews/Reviews";
+import Life from "../components/Life/Life";
+import BottomSection from "../components/BottomSection/BottomSection";
+
+import Ad1 from "../assets/images/ads/ad1.png";
+import Ad3 from "../assets/images/ads/ad3.png";
 import ScrollToTop from "react-scroll-to-top";
 const Home = () => {
 	return (
 		<>
+			<img src={Ad1} alt="aa" className="h-[90px] mx-[auto] my-[16px]" />
 			<TopSection></TopSection>
-			<AdType1></AdType1>
+			<img src={Ad3} alt="" className="h-[250px] mx-auto my-[24px] shrink-0" />
 			<SportsSection></SportsSection>
-			<AdType1></AdType1>
-			<EnterTainment></EnterTainment>
-			<AdType1></AdType1>
-			<PhotoGalary></PhotoGalary>
+			{/*<EnterTainment></EnterTainment>
+			<PhotoGallery></PhotoGallery>
 			<Videos></Videos>
 			<Reviews></Reviews>
-			<AdType1></AdType1>
 			<Life></Life>
-			<BottomSection></BottomSection>
+			<BottomSection></BottomSection>*/}
 			<ScrollToTop smooth />
 		</>
 	);

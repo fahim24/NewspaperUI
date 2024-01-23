@@ -5,11 +5,11 @@ import NewsTime from "../NewsTime";
 
 import Ellipse from "../../../assets/images/icons/ellipse2.svg";
 
-const NewsType2 = () => {
+const NewsType5 = () => {
 	return (
 		<section>
-			<div className="flex flex-col items-start gap-[10px] ">
-				<div className=" text-CBlue text-lg font-bold w-[296px] line-clamp-1">
+			<div className="flex flex-col items-start gap-[16px] ">
+				<div className=" text-CBlue text-xl font-bold w-[296px] line-clamp-2">
 					<NewsHeadline></NewsHeadline>
 				</div>
 				<div className="w-[296px] text-CGray line-clamp-3">
@@ -28,4 +28,4 @@ const NewsType2 = () => {
 		</section>
 	);
 };
-export default NewsType2;
+export default NewsType5;

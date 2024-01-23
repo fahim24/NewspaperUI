@@ -1,5 +1,3 @@
-import ProPic from "../../assets/proPic.svg";
-
 const Reviews = () => {
 	return (
 		<div className="w-11/12 md:w-11/12 mx-auto">
@@ -12,11 +10,7 @@ const Reviews = () => {
 				<div className="border border-solid border-gray-200 mb-6 p-5 ">
 					<div className="flex items-center justify-between">
 						<div className="flex items-center">
-							<img
-								className="mr-4 h-20 w-20 rounded-full object-cover"
-								src={ProPic}
-								alt="profile"
-							/>
+							<img className="mr-4 h-20 w-20 rounded-full object-cover" src="" alt="profile" />
 							<div>
 								<h3 className="font-semibold text-orange-500 mb-3">ড. মঞ্জুরে খোদা</h3>
 								<span className="block text-xs">জয়পুরহাট</span>
@@ -39,7 +33,7 @@ const Reviews = () => {
 				</div>
 				<div>
 					<div className="flex items-center border-b-2 border-solid border-gray-200 p-3 my-3">
-						<img className="mr-4 h-20 w-20 rounded-full object-cover" src={ProPic} alt="profile" />
+						<img className="mr-4 h-20 w-20 rounded-full object-cover" src="" alt="profile" />
 						<div>
 							<p className="my-3 text-sm text-gray-500 line-clamp-2">
 								বিদেশে রপ্তানির পোশাক বন্দরে নেওয়ার পথে ট্রাক ও কাভার্ডভ্যান থেকে চুরি চক্রের
@@ -58,7 +52,7 @@ const Reviews = () => {
 						</div>
 					</div>
 					<div className="flex items-center border-b-2 border-solid border-gray-200 p-3 my-3">
-						<img className="mr-4 h-20 w-20 rounded-full object-cover" src={ProPic} alt="profile" />
+						<img className="mr-4 h-20 w-20 rounded-full object-cover" src="" alt="profile" />
 						<div>
 							<p className="my-3 text-sm text-gray-500 line-clamp-2">
 								বিদেশে রপ্তানির পোশাক বন্দরে নেওয়ার পথে ট্রাক ও কাভার্ডভ্যান থেকে চুরি চক্রের
@@ -77,7 +71,7 @@ const Reviews = () => {
 						</div>
 					</div>
 					<div className="flex items-center p-3 my-3">
-						<img className="mr-4 h-20 w-20 rounded-full object-cover" src={ProPic} alt="profile" />
+						<img className="mr-4 h-20 w-20 rounded-full object-cover" src="" alt="profile" />
 						<div>
 							<p className="my-3 text-sm text-gray-500 line-clamp-2">
 								বিদেশে রপ্তানির পোশাক বন্দরে নেওয়ার পথে ট্রাক ও কাভার্ডভ্যান থেকে চুরি চক্রের

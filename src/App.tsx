@@ -8,14 +8,13 @@ import NotFound from "./Pages/NotFound";
 import EnterTainment from "./components/Entertainment/EnterTainment";
 import Reviews from "./components/Reviews/Reviews";
 import Life from "./components/Life/Life";
-import AdType1 from "./components/Ads/AdType1/AdType1";
 
 function App() {
 	return (
 		<div className="max-w-[1920px]">
 			<Header></Header>
-			<AdType1></AdType1>
-			{/*<Routes>
+
+			<Routes>
 				<Route path="/" element={<Home></Home>}></Route>
 				<Route path="/bangladesh" element={<SportsSection></SportsSection>}></Route>
 				<Route path="/international" element={<SportsSection></SportsSection>}></Route>
@@ -28,7 +27,7 @@ function App() {
 				<Route path="/others" element={<Life></Life>}></Route>
 				<Route path="/travel" element={<SportsSection></SportsSection>}></Route>
 				<Route path="*" element={<NotFound></NotFound>}></Route>
-	</Routes>*/}
+			</Routes>
 
 			<Footer></Footer>
 		</div>

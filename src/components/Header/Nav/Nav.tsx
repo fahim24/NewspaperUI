@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
 	return (
 		<section className="border-t-[1px] border-solid border-ClGray">
-			<div className="h-auto px-[20rem]">
+			<div className="h-auto w-[1280px] mx-auto">
 				<div className="flex gap-[50px] items-center justify-center ">
 					<div className="py-[6px] text-COrange border-b-2 border-COrange">
 						<Link to="/bangladesh">বাংলাদেশ</Link>

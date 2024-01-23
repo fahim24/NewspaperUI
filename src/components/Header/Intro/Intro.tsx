@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Intro = () => {
 	return (
 		<section>
-			<div className="max-w-[1280px] mx-auto mt-[10px] h-[82px]">
+			<div className="w-[1280px] mx-auto mt-[10px] h-[82px]">
 				<div className="grid grid-cols-[auto_1fr_auto] items-center justify-center">
 					{/* Daily Info */}
 

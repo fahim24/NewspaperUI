@@ -2,7 +2,7 @@ import Ellipse from "../../../assets/images/icons/ellipse.svg";
 const HotNews = () => {
 	return (
 		<section className="bg-ClGray">
-			<div className="px-[20rem] py-[10px] h-auto ">
+			<div className="w-[1280px] mx-auto py-[10px] h-auto ">
 				<div className="flex items-start  gap-[20px]">
 					<div className="text-sm text-CBlack">শিরোনাম</div>
 					<div className="overflow-hidden">

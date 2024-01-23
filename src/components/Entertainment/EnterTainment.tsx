@@ -1,8 +1,6 @@
-import Adtype2 from "../Ads/AdType2/Adtype2";
 import NewsCover from "../News/NewsCover";
 import NewsType1 from "../News/NewsType/NewsType1";
 import NewsType4 from "../News/NewsType/NewsType4";
-import Map from "../../assets/map.svg";
 
 const EnterTainment = () => {
 	return (
@@ -49,7 +47,7 @@ const EnterTainment = () => {
 						<div className="my-2 border-b-2 border-solid border-gray-200 p-2">
 							<h1 className="text-md font-semibold">অনলাইন ভোট</h1>
 						</div>
-						<img src={Map} alt="" className="py-2" />
+						<img src="" alt="" className="py-2" />
 						<p className="text-xs text-gray-500">
 							ইউক্রেনের শস্য রপ্তানির জন্য কৃষ্ণসাগরের বন্দরগুলো খুলে দিতে জাতিসংঘ-সমর্থিত একটি
 							চুক্তি করেছে রাশিয়া ও ইউক্রেন। ইউক্রেনে রুশ হামলা শুরুর পর বিশ্বজুড়ে যে খাদ্যসংকট দেখা
@@ -89,7 +87,7 @@ const EnterTainment = () => {
 							</button>
 						</div>
 					</div>
-					<Adtype2></Adtype2>
+					ad2
 				</div>
 			</div>
 		</div>

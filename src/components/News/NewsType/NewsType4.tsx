@@ -1,14 +1,13 @@
 import NewsHeadline from "../NewsHeadline";
-import NewsTags from "../NewsTags";
+//import NC1 from "../../../assets/images/News/newsCover1.png";
 
 const NewsType4 = () => {
 	return (
-		<div className="overflow-hidden">
-			<div className="bg-white py-4 ">
-				<h2 className=" font-bold mb-2 hover:text-orange-400 line-clamp-2">
+		<div className="bg-[url(https://picsum.photos/800/400)] h-[350px] w-[624px] relative bg-cover">
+			<div className="absolute bottom-0">
+				<div className="text-white text-2xl font-bold p-[20px]">
 					<NewsHeadline></NewsHeadline>
-				</h2>
-				<NewsTags></NewsTags>
+				</div>
 			</div>
 		</div>
 	);

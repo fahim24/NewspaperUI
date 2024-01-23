@@ -1,6 +1,6 @@
 import NewsType3 from "../News/NewsType/NewsType3";
 
-const PhotoGalary = () => {
+const PhotoGallery = () => {
 	return (
 		<div className="w-11/12 md:w-11/12 mx-auto">
 			<div className="flex items-center justify-around my-5 ">
@@ -34,4 +34,4 @@ const PhotoGalary = () => {
 	);
 };
 
-export default PhotoGalary;
+export default PhotoGallery;

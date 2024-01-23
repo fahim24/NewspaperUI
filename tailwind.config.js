@@ -12,6 +12,9 @@ export default {
 				ClGray: "#EEEEEE",
 				ClOrange: "#FDE8DE",
 			},
+			lineClamp: {
+				8: "8",
+			},
 			animation: {
 				"text-slide": "text-slide 25s linear infinite",
 			},
