@@ -1,5 +1,3 @@
-import NewsType1 from "../News/NewsType/NewsType1";
-
 const Life = () => {
 	return (
 		<div className="w-11/12 md:w-10/12 mx-auto">
@@ -10,18 +8,10 @@ const Life = () => {
 			</div>
 
 			<div className="grid grid-cols-2 md:grid-cols-4 gap-3 ">
-				<div className="border-r-2 border-solid border-gray-200 pr-2">
-					<NewsType1></NewsType1>
-				</div>
-				<div className="md:border-r-2 border-solid border-gray-200 md:pr-2">
-					<NewsType1></NewsType1>
-				</div>
-				<div className="border-r-2 border-solid border-gray-200 pr-2">
-					<NewsType1></NewsType1>
-				</div>
-				<div>
-					<NewsType1></NewsType1>
-				</div>
+				<div className="border-r-2 border-solid border-gray-200 pr-2">a</div>
+				<div className="md:border-r-2 border-solid border-gray-200 md:pr-2">a</div>
+				<div className="border-r-2 border-solid border-gray-200 pr-2">a</div>
+				<div>a</div>
 			</div>
 		</div>
 	);

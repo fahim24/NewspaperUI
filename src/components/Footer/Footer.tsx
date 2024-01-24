@@ -4,8 +4,8 @@ import Social from "./Social/Social";
 const Footer = () => {
 	return (
 		<div>
-			<Social></Social>
-			<FooterLinks></FooterLinks>
+			<Social />
+			<FooterLinks />
 		</div>
 	);
 };

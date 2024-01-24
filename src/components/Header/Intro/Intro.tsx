@@ -15,10 +15,10 @@ const Intro = () => {
 
 					<div className="inline-flex flex-col flex-start gap-[10px]">
 						<div className="flex items-center gap-[15px]">
-							<img src={Menu} alt="Menu" />
-							<img src={Search} alt="Search" />
+							<img src={Menu} alt="Menu" title="Toggle Navbar" />
+							<img src={Search} alt="Search" title="Search" />
 						</div>
-						<div className="flex items-center gap-[10px] h-[20px] ">
+						<div className="flex items-center gap-[10px] h-[20px]  " title="Today's Date">
 							<img src={Date} alt="Calender" />
 							<p className="text-sm text-CBlack leading-7">মঙ্গলবার, ১৬ই জানুয়ারি, ২০২৪</p>
 						</div>
@@ -27,18 +27,24 @@ const Intro = () => {
 
 					<div className="flex justify-center">
 						<Link to="/">
-							<img src={Logo} className="h-[50px]" alt="Logo" />
+							<img src={Logo} className="h-[50px]" alt="Logo" title="Go to Home" />
 						</Link>
 					</div>
 					{/* Logs */}
 
 					<div className="inline-flex items-center gap-[15px]  ">
-						<img src={Dark} alt="Theme Change" />
-						<div className="flex gap-[4px] h-[30px] items-center px-[15px] py-[5px] border border-solid border-Secondary rounded-[6px] ">
+						<img src={Dark} alt="Theme Change" title="Toggle Dark Mode" />
+						<div
+							className="flex gap-[4px] h-[30px] items-center px-[15px] py-[5px] border border-solid border-Secondary rounded-[6px] "
+							title="Toggle Language"
+						>
 							<img src={LanIcon} alt="Language Icon" />
 							<p className="text-CBlack text-sm leading-7">বাং</p>
 						</div>
-						<button className="px-[15px] py-[5px] border h-[30px] rounded-[5px] bg-COrange text-white text-center text-xs font-bold">
+						<button
+							className="px-[15px] py-[5px] border h-[30px] rounded-[5px] bg-COrange text-white text-center text-xs font-bold"
+							title="Login"
+						>
 							লগ ইন
 						</button>
 					</div>

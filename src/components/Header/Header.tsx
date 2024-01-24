@@ -5,9 +5,9 @@ import Nav from "./Nav/Nav";
 const Header = () => {
 	return (
 		<div>
-			<Intro></Intro>
-			<Nav></Nav>
-			<HotNews></HotNews>
+			<Intro />
+			<Nav />
+			<HotNews />
 		</div>
 	);
 };

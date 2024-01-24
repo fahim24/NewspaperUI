@@ -1,6 +1,8 @@
 import NewsHeadline from "../News/NewsHeadline";
+import NewsBody from "../News/NewsBody";
+import NewsTime from "../News/NewsTime";
+import NewsTags from "../News/NewsTags";
 
-import NewsType1 from "../News/NewsType/NewsType1";
 import NewsType2 from "../News/NewsType/NewsType2";
 import NewsType3 from "../News/NewsType/NewsType3";
 
@@ -8,7 +10,10 @@ import NC1 from "../../assets/images/News/newsCover1.png";
 import NC2 from "../../assets/images/News/newsCover2.jpg";
 import NC3 from "../../assets/images/News/newsCover3.jpg";
 import NC4 from "../../assets/images/News/newsCover4.jpg";
+
 import AD2 from "../../assets/images/ads/ad2.png";
+
+import Ellipse from "../../assets/images/icons/ellipse2.svg";
 
 const TopSection = () => {
 	return (
@@ -19,10 +24,32 @@ const TopSection = () => {
 					{/* News Section row-1*/}
 
 					<div className="flex flex-col gap-[16px]">
+						{/* News 1 */}
+
 						<div className="flex gap-[20px]">
-							<NewsType1></NewsType1>
+							<div className="flex flex-col items-start gap-[20px]">
+								<div className="flex flex-col items-start gap-[15px] ">
+									<h1 className=" text-CBlue text-2xl font-bold w-[308px] line-clamp-3">
+										<NewsHeadline></NewsHeadline>
+									</h1>
+									<p className="w-[308px] text-CGray line-clamp-8">
+										<NewsBody></NewsBody>
+									</p>
+								</div>
+								<div className="flex items-center gap-[8px] ">
+									<p className="text-sm text-CGray">
+										<NewsTime></NewsTime>
+									</p>
+									<img src={Ellipse} alt="" />
+									<p className="text-sm text-COrange font-bold">
+										<NewsTags></NewsTags>
+									</p>
+								</div>
+							</div>
 							<img src={NC1} alt="cover" className="h-[350px]" />
 						</div>
+						{/* line */}
+
 						<div className="border border-solid border-ClGray w-full "></div>
 
 						{/* News Section row-2*/}

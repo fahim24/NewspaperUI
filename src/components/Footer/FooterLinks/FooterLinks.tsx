@@ -5,6 +5,8 @@ const FooterLinks = () => {
 		<section>
 			<div className=" py-[32px] bg-slate-800">
 				<div className="w-[1280px] mx-auto flex flex-col items-start gap-[24px] text-sm text-white">
+					{/* Site Links */}
+
 					<div className="flex items-start gap-[32px] ">
 						<div className="flex flex-col items-start gap-[10px] w-[187px]">
 							<div className="hover:text-orange-400">
@@ -28,7 +30,11 @@ const FooterLinks = () => {
 							</div>
 						</div>
 					</div>
+					{/* Line */}
+
 					<div className="border border-solid border-white w-full"></div>
+					{/* Copyright Info */}
+
 					<Copyright></Copyright>
 				</div>
 			</div>

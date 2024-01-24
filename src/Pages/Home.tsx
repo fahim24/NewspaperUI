@@ -9,6 +9,8 @@ import BottomSection from "../components/BottomSection/BottomSection";
 
 import Ad1 from "../assets/images/ads/ad1.png";
 import Ad3 from "../assets/images/ads/ad3.png";
+import Ad5 from "../assets/images/ads/ad5.png";
+
 import ScrollToTop from "react-scroll-to-top";
 const Home = () => {
 	return (
@@ -17,8 +19,9 @@ const Home = () => {
 			<TopSection></TopSection>
 			<img src={Ad3} alt="" className="h-[250px] mx-auto my-[24px] shrink-0" />
 			<SportsSection></SportsSection>
-			{/*<EnterTainment></EnterTainment>
-			<PhotoGallery></PhotoGallery>
+			<img src={Ad5} alt="" className="h-[90px] mx-auto my-[24px] shrink-0" />
+			<EnterTainment></EnterTainment>
+			{/*<PhotoGallery></PhotoGallery>
 			<Videos></Videos>
 			<Reviews></Reviews>
 			<Life></Life>
