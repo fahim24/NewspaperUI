@@ -1,34 +1,99 @@
-import NewsCover from "../News/NewsCover";
-import NewsType4 from "../News/NewsType/NewsType4";
+import Video from "../../assets/images/icons/video.svg";
+import NC1 from "../../assets/images/News/newsCover19.jpg";
+import NC2 from "../../assets/images/News/newsCover20.jpg";
+import NC3 from "../../assets/images/News/newsCover21.jpg";
 
 const Videos = () => {
 	return (
-		<div className="w-11/12 md:w-11/12 mx-auto">
-			<div className="flex items-center justify-around my-5 ">
-				<div className="border border-solid border-gray-200 m-2 w-full"> </div>
-				<h1 className="text-xl font-bold hover:text-orange-400">ভিডিও</h1>
-				<div className="border border-solid border-gray-200 m-2 w-full"> </div>
-			</div>
+		<section>
+			<div className="w-[1280px] mx-auto ">
+				{/* Section Head */}
 
-			<div className="grid grid-cols-2 md:grid-cols-4 gap-3 ">
-				<div className="border-r-2 border-solid border-gray-200 pr-2">
-					<NewsCover></NewsCover>
-					<NewsType4></NewsType4>
+				<div className="flex justify-center items-center gap-[24px] my-[24px]">
+					<div className="border border-solid border-ClGray w-full"> </div>
+					<div className="text-CBlue hover:text-COrange items-center text-2xl font-bold">ভিডিও</div>
+					<div className="border border-solid border-ClGray w-full"> </div>
 				</div>
-				<div className="md:border-r-2 border-solid border-gray-200 md:pr-2">
-					<NewsCover></NewsCover>
-					<NewsType4></NewsType4>
-				</div>
-				<div className="border-r-2 border-solid border-gray-200 pr-2">
-					<NewsCover></NewsCover>
-					<NewsType4></NewsType4>
-				</div>
-				<div>
-					<NewsCover></NewsCover>
-					<NewsType4></NewsType4>
+				{/* Section Body */}
+				<div className="inline-flex items-start gap-[16px]">
+					{/* News 1 */}
+					<div className="flex flex-col items-start gap-[16px]">
+						<div className="w-[296px] h-[167px] relative">
+							<img src={NC1} alt="" className="w-[296px] h-[167px] object-cover" />
+							<div className="absolute w-full h-full top-0 left-0 overlay2" />
+							<img
+								src={Video}
+								alt=""
+								className="absolute top-[54px] left-[118px] w-[60px] h-[60px]"
+							/>
+						</div>
+						<div className="flex flex-col items-start gap-[16px]">
+							<h4 className="text-COrange text-xl font-bold w-[296px]">
+								ঢাকায় বাসাবাড়িতে লাকড়ির চুলায় রান্না কেন
+							</h4>
+							<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
+						</div>
+					</div>
+					<div className="border border-solid border-ClGray h-[277px]"> </div>
+					{/* News 2 */}
+					<div className="flex flex-col items-start gap-[16px]">
+						<div className="w-[296px] h-[167px] relative">
+							<img src={NC2} alt="" className="w-[296px] h-[167px] object-cover" />
+							<div className="absolute w-full h-full top-0 left-0 overlay2" />
+							<img
+								src={Video}
+								alt=""
+								className="absolute top-[54px] left-[118px] w-[60px] h-[60px]"
+							/>
+						</div>
+						<div className="flex flex-col items-start gap-[16px]">
+							<h4 className="text-CBlue hover:text-COrange text-xl font-bold w-[296px]">
+								ঢাকায় বাসাবাড়িতে লাকড়ির চুলায় রান্না কেন
+							</h4>
+							<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
+						</div>
+					</div>
+					<div className="border border-solid border-ClGray h-[277px]"> </div>
+					{/* News 3 */}
+					<div className="flex flex-col items-start gap-[16px]">
+						<div className="w-[296px] h-[167px] relative">
+							<img src={NC1} alt="" className="w-[296px] h-[167px] object-cover" />
+							<div className="absolute w-full h-full top-0 left-0 overlay2" />
+							<img
+								src={Video}
+								alt=""
+								className="absolute top-[54px] left-[118px] w-[60px] h-[60px]"
+							/>
+						</div>
+						<div className="flex flex-col items-start gap-[16px]">
+							<h4 className="text-CBlue hover:text-COrange text-xl font-bold w-[296px]">
+								ঢাকায় বাসাবাড়িতে লাকড়ির চুলায় রান্না কেন
+							</h4>
+							<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
+						</div>
+					</div>
+					<div className="border border-solid border-ClGray h-[277px]"> </div>
+					{/* News 4 */}
+					<div className="flex flex-col items-start gap-[16px]">
+						<div className="w-[296px] h-[167px] relative">
+							<img src={NC3} alt="" className="w-[296px] h-[167px] object-cover" />
+							<div className="absolute w-full h-full top-0 left-0 overlay2" />
+							<img
+								src={Video}
+								alt=""
+								className="absolute top-[54px] left-[118px] w-[60px] h-[60px]"
+							/>
+						</div>
+						<div className="flex flex-col items-start gap-[16px]">
+							<h4 className="text-CBlue hover:text-COrange text-xl font-bold w-[296px]">
+								ঢাকায় বাসাবাড়িতে লাকড়ির চুলায় রান্না কেন
+							</h4>
+							<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

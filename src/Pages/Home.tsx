@@ -10,6 +10,8 @@ import BottomSection from "../components/BottomSection/BottomSection";
 import Ad1 from "../assets/images/ads/ad1.png";
 import Ad3 from "../assets/images/ads/ad3.png";
 import Ad5 from "../assets/images/ads/ad5.png";
+import Ad7 from "../assets/images/ads/ad7.png";
+import Ad8 from "../assets/images/ads/ad8.png";
 
 import ScrollToTop from "react-scroll-to-top";
 const Home = () => {
@@ -21,10 +23,12 @@ const Home = () => {
 			<SportsSection></SportsSection>
 			<img src={Ad5} alt="" className="h-[90px] mx-auto my-[24px] shrink-0" />
 			<EnterTainment></EnterTainment>
-			{/*<PhotoGallery></PhotoGallery>
+			<img src={Ad7} alt="" className="h-[90px] mx-auto my-[24px] shrink-0" />
+			<PhotoGallery></PhotoGallery>
 			<Videos></Videos>
 			<Reviews></Reviews>
-			<Life></Life>
+			<img src={Ad8} alt="" className="h-[90px] mx-auto my-[24px] shrink-0" />
+			{/*<Life></Life>
 			<BottomSection></BottomSection>*/}
 			<ScrollToTop smooth />
 		</>

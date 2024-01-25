@@ -1,36 +1,96 @@
-import NewsType3 from "../News/NewsType/NewsType3";
+import NC1 from "../../assets/images/News/newsCover14.jpg";
+import NC2 from "../../assets/images/News/newsCover15.jpg";
+import NC3 from "../../assets/images/News/newsCover16.jpg";
+import NC4 from "../../assets/images/News/newsCover17.jpg";
+import NC5 from "../../assets/images/News/newsCover18.jpg";
+
+import PicI from "../../assets/images/icons/picture.svg";
 
 const PhotoGallery = () => {
 	return (
-		<div className="w-11/12 md:w-11/12 mx-auto">
-			<div className="flex items-center justify-around my-5 ">
-				<div className="border border-solid border-gray-200 m-2 w-full"> </div>
-				<h1 className="text-xl font-bold hover:text-orange-400">ছবি</h1>
-				<div className="border border-solid border-gray-200 m-2 w-full"> </div>
-			</div>
+		<section>
+			<div className="w-[1280px] mx-auto ">
+				{/* Section Head */}
 
-			<div className="grid grid-cols-2 md:grid-cols-4 gap-3 h-80">
-				<div className="border-r-2 border-solid border-gray-200 pr-2 md:order-first">
-					<div className="h-1/2 pb-2 border-b-2 border-solid border-gray-200">
-						<NewsType3></NewsType3>
-					</div>
-					<div className="h-1/2 pt-2 order-first">
-						<NewsType3></NewsType3>
-					</div>
+				<div className="flex justify-center items-center gap-[24px] my-[24px]">
+					<div className="border border-solid border-ClGray w-full"> </div>
+					<div className="text-CBlue hover:text-COrange items-center text-2xl font-bold">ছবি</div>
+					<div className="border border-solid border-ClGray w-full"> </div>
 				</div>
-				<div className="col-span-2 order-first">
-					<NewsType3></NewsType3>
-				</div>
-				<div className="border-l-2 border-solid border-gray-200 pl-2">
-					<div className="h-1/2 pb-2 border-b-2 border-solid border-gray-200">
-						<NewsType3></NewsType3>
+				{/* Section Body */}
+				<div className="inline-flex items-start gap-[16px]">
+					<div className="flex flex-col items-start gap-[16px]">
+						{/* News 1 */}
+						<div className="relative w-[296px] h-[159px]">
+							<img className=" w-full h-full object-cover" src={NC2} alt="News Cover" />
+							<div className="absolute w-full h-full top-0 left-0 overlay" />
+							<img
+								src={PicI}
+								alt=""
+								className="absolute top-[10px] left-[10px] w-[24px] h-[24px]"
+							/>
+							<h3 className="absolute left-[10px] bottom-[10px] text-white text-md font-bold">
+								ইজতেমার আখেরি মোনাজাত
+							</h3>
+						</div>
+						<div className="border border-solid border-ClGray w-full"> </div>
+						{/* News 2 */}
+						<div className="relative w-[296px] h-[159px]">
+							<img className=" w-full h-full object-cover" src={NC3} alt="News Cover" />
+							<div className="absolute w-full h-full top-0 left-0 overlay" />
+							<img
+								src={PicI}
+								alt=""
+								className="absolute top-[10px] left-[10px] w-[24px] h-[24px]"
+							/>
+							<h3 className="absolute left-[10px] bottom-[10px] text-white text-md font-bold">
+								বিএনপি-পুলিশ সংঘর্ষ
+							</h3>
+						</div>
 					</div>
-					<div className="h-1/2 pt-2">
-						<NewsType3></NewsType3>
+					<div className="border border-solid border-ClGray h-[350px]"> </div>
+					{/* News 3 */}
+					<div className="relative w-[624px] h-[350px]">
+						<img className=" w-full h-full object-cover" src={NC1} alt="News Cover" />
+						<div className="absolute w-full h-full top-0 left-0 overlay" />
+						<img src={PicI} alt="" className="absolute top-[20px] left-[20px] w-[24px] h-[24px]" />
+						<h3 className="absolute left-[20px] bottom-[20px] text-COrange text-2xl font-bold">
+							আথিয়া শেঠির গায়ে হলুদ
+						</h3>
+					</div>
+					<div className="border border-solid border-ClGray h-[350px]"> </div>
+					<div className="flex flex-col items-start gap-[16px]">
+						{/* News 4 */}
+						<div className="relative w-[296px] h-[159px]">
+							<img className=" w-full h-full object-cover" src={NC4} alt="News Cover" />
+							<div className="absolute w-full h-full top-0 left-0 overlay" />
+							<img
+								src={PicI}
+								alt=""
+								className="absolute top-[10px] left-[10px] w-[24px] h-[24px]"
+							/>
+							<h3 className="absolute left-[10px] bottom-[10px] text-white text-md font-bold">
+								গরিবের আটা মাটিতে
+							</h3>
+						</div>
+						<div className="border border-solid border-ClGray w-full"> </div>
+						{/* News 5 */}
+						<div className="relative w-[296px] h-[159px]">
+							<img className=" w-full h-full object-cover" src={NC5} alt="News Cover" />
+							<div className="absolute w-full h-full top-0 left-0 overlay" />
+							<img
+								src={PicI}
+								alt=""
+								className="absolute top-[10px] left-[10px] w-[24px] h-[24px]"
+							/>
+							<h3 className="absolute left-[10px] bottom-[10px] text-white text-md font-bold">
+								ঝুঁকি নিয়ে পারাপার
+							</h3>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

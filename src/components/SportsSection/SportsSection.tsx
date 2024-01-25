@@ -30,7 +30,7 @@ const SportsSection = () => {
 							</div>
 							<div className="border border-solid border-ClGray h-full "></div>
 							<div className="flex flex-col item-start gap-[16px]">
-								<img src={NC8} alt="" className="h-[166px] w-[296px]" />
+								<img src={NC8} alt="" className="h-[166px] w-[296px] object-cover" />
 								<NewsType5></NewsType5>
 							</div>
 						</div>
