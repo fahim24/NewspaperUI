@@ -29,7 +29,7 @@ const TopSection = () => {
 						<div className="flex gap-[20px]">
 							<div className="flex flex-col items-start gap-[20px]">
 								<div className="flex flex-col items-start gap-[15px] ">
-									<h1 className=" text-CBlue text-2xl font-bold w-[308px] line-clamp-3">
+									<h1 className=" text-CBlue hover:text-COrange text-2xl font-bold w-[308px] line-clamp-3">
 										<NewsHeadline></NewsHeadline>
 									</h1>
 									<p className="w-[308px] text-CGray line-clamp-8">

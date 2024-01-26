@@ -43,7 +43,7 @@ const EnterTainment = () => {
 								<img className="w-[624px] h-[350px] object-cover" src={NC1} />
 								<div className="flex flex-col items-start gap-[20px] self-stretch">
 									<div className="flex flex-col items-start gap-[15px] self-stretch">
-										<h1 className=" text-CBlue text-2xl font-bold self-stretch;">
+										<h1 className=" text-CBlue hover:text-COrange text-2xl font-bold self-stretch;">
 											<NewsHeadline></NewsHeadline>
 										</h1>
 										<p className="text-CGray line-clamp-3 self-stretch">
@@ -66,7 +66,7 @@ const EnterTainment = () => {
 								<div className="flex flex-col items-start gap-[16px] w-[296px]">
 									<img className="w-[296px] h-[166px] object-cover" src={NC2} />
 									<div className="flex flex-col items-start gap-[16px]">
-										<p className="text-lg font-bold text-CBlue">
+										<p className="text-lg hover:text-COrange font-bold text-CBlue">
 											<NewsHeadline />
 										</p>
 										<div className="flex items-center gap-[8px]">
@@ -84,7 +84,7 @@ const EnterTainment = () => {
 								<div className="flex flex-col items-start gap-[16px] w-[296px]">
 									<img className="w-[296px] h-[166px] object-cover" src={NC3} />
 									<div className="flex flex-col items-start gap-[16px]">
-										<p className="text-lg font-bold text-CBlue">
+										<p className="text-lg hover:text-COrange font-bold text-CBlue">
 											<NewsHeadline />
 										</p>
 										<div className="flex items-center gap-[8px]">
@@ -109,16 +109,37 @@ const EnterTainment = () => {
 							<div className="flex flex-col item-start gap-[16px]">
 								<img src={NC4} alt="" className="h-[166px] w-[296px] object-cover" />
 								<NewsType2></NewsType2>
+								<div className="flex items-center gap-[8px] ">
+									<div className="text-sm text-CGray">
+										<NewsTime></NewsTime>
+									</div>
+									<img src={Ellipse} alt="" />
+									<p className="text-sm text-COrange font-bold">হলিউড</p>
+								</div>
 							</div>
 							<div className="border border-solid border-ClGray h-full "></div>
 							<div className="flex flex-col item-start gap-[16px]">
 								<img src={NC5} alt="" className="h-[166px] w-[296px] object-cover" />
 								<NewsType2></NewsType2>
+								<div className="flex items-center gap-[8px] ">
+									<div className="text-sm text-CGray">
+										<NewsTime></NewsTime>
+									</div>
+									<img src={Ellipse} alt="" />
+									<p className="text-sm text-COrange font-bold">বলিউড</p>
+								</div>
 							</div>
 							<div className="border border-solid border-ClGray h-full "></div>
 							<div className="flex flex-col item-start gap-[16px]">
 								<img src={NC6} alt="" className="h-[166px] w-[296px] object-cover" />
 								<NewsType2></NewsType2>
+								<div className="flex items-center gap-[8px] ">
+									<div className="text-sm text-CGray">
+										<NewsTime></NewsTime>
+									</div>
+									<img src={Ellipse} alt="" />
+									<p className="text-sm text-COrange font-bold">হলিউড</p>
+								</div>
 							</div>
 						</div>
 					</div>

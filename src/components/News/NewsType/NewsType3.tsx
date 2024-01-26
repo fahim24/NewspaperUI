@@ -9,7 +9,7 @@ const NewsType3 = () => {
 	return (
 		<section>
 			<div className="flex flex-col items-start gap-[10px] ">
-				<div className=" text-CBlue text-xl font-bold w-[296px]">
+				<div className=" text-CBlue hover:text-COrange text-xl font-bold w-[296px]">
 					<NewsHeadline></NewsHeadline>
 				</div>
 				<div className="w-[296px] text-CGray line-clamp-3">

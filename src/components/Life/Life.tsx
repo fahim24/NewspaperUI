@@ -1,19 +1,93 @@
+import NC1 from "../../assets/images/News/newsCover5.jpg";
+import NC2 from "../../assets/images/News/newsCover6.jpg";
+import NC3 from "../../assets/images/News/newsCover12.jpg";
+import NC4 from "../../assets/images/News/newsCover22.jpg";
+
 const Life = () => {
 	return (
-		<div className="w-11/12 md:w-10/12 mx-auto">
-			<div className="flex items-center justify-around my-5 ">
-				<div className="border border-solid border-gray-200 m-2 w-full"> </div>
-				<h1 className="text-xl font-bold hover:text-orange-400">জীবনযাপন</h1>
-				<div className="border border-solid border-gray-200 m-2 w-full"> </div>
-			</div>
+		<section>
+			<div className="w-[1280px] mx-auto ">
+				{/* Section Head */}
 
-			<div className="grid grid-cols-2 md:grid-cols-4 gap-3 ">
-				<div className="border-r-2 border-solid border-gray-200 pr-2">a</div>
-				<div className="md:border-r-2 border-solid border-gray-200 md:pr-2">a</div>
-				<div className="border-r-2 border-solid border-gray-200 pr-2">a</div>
-				<div>a</div>
+				<div className="flex justify-center items-center gap-[24px] my-[24px]">
+					<div className="border border-solid border-ClGray w-full"> </div>
+					<div className="text-CBlue hover:text-COrange items-center text-2xl font-bold">
+						জীবনযাপন
+					</div>
+					<div className="border border-solid border-ClGray w-full"> </div>
+				</div>
+				{/* Section Body */}
+				<div className="inline-flex items-start gap-[16px]">
+					{/* News 1 */}
+					<div className="flex flex-col items-start gap-[16px] w-[296px]">
+						<img src={NC1} alt="" className="w-[296px] h-[166px] object-cover" />
+						<div className="flex flex-col items-start gap-[10px]">
+							<h5 className="text-CBlue hover:text-COrange text-lg font-bold">
+								ঢাকায় বাসাবাড়িতে লাকড়ির চুলায় রান্না কেন
+							</h5>
+							<p className="line-clamp-3 text-CGray text-sm">
+								সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরে বাংলাদেশ বিমানের এক‌টি ফ্লাইট উড্ডয়নের আগে চাকা
+								ফেটে রানওয়ে বন্ধ হয়ে গেছে। শুক্রবার বেলা সোয়া ১টার দিকে বাংলাদেশ বিমানের সিলেট থেকে
+								ঢাকাগামী ৬০২ ফ্লাইটে এ ঘটনা ঘটে। ওই ফ্লাইটে ১৪৮ জন যাত্রী ছিলেন। বিষয়‌টি গণমাধ্যমকে
+								নি‌শ্চিত করেছেন সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরের প‌রিচা‌লক হা‌ফিজ আহমদ।
+							</p>
+						</div>
+						<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
+					</div>
+					<div className="border border-solid border-ClGray h-[360px]"> </div>
+					{/* News 2 */}
+					<div className="flex flex-col items-start gap-[16px] w-[296px]">
+						<img src={NC2} alt="" className="w-[296px] h-[166px] object-cover" />
+						<div className="flex flex-col items-start gap-[10px]">
+							<h5 className="text-CBlue hover:text-COrange text-lg font-bold">
+								চুয়াডাঙ্গার গ্রামটিকে বলা হচ্ছে ‘বন্য প্রাণী ও পাখির গ্রাম’, ১৫ ছবিতে তারই প্রমাণ
+							</h5>
+							<p className="line-clamp-3 text-CGray text-sm">
+								সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরে বাংলাদেশ বিমানের এক‌টি ফ্লাইট উড্ডয়নের আগে চাকা
+								ফেটে রানওয়ে বন্ধ হয়ে গেছে। শুক্রবার বেলা সোয়া ১টার দিকে বাংলাদেশ বিমানের সিলেট থেকে
+								ঢাকাগামী ৬০২ ফ্লাইটে এ ঘটনা ঘটে। ওই ফ্লাইটে ১৪৮ জন যাত্রী ছিলেন। বিষয়‌টি গণমাধ্যমকে
+								নি‌শ্চিত করেছেন সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরের প‌রিচা‌লক হা‌ফিজ আহমদ।
+							</p>
+						</div>
+						<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
+					</div>
+					<div className="border border-solid border-ClGray h-[360px]"> </div>
+					{/* News 3 */}
+					<div className="flex flex-col items-start gap-[16px] w-[296px]">
+						<img src={NC3} alt="" className="w-[296px] h-[166px] object-cover" />
+						<div className="flex flex-col items-start gap-[10px]">
+							<h5 className="text-CBlue hover:text-COrange text-lg font-bold">
+								ঢাকায় বাসাবাড়িতে লাকড়ির চুলায় রান্না কেন
+							</h5>
+							<p className="line-clamp-3 text-CGray text-sm">
+								সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরে বাংলাদেশ বিমানের এক‌টি ফ্লাইট উড্ডয়নের আগে চাকা
+								ফেটে রানওয়ে বন্ধ হয়ে গেছে। শুক্রবার বেলা সোয়া ১টার দিকে বাংলাদেশ বিমানের সিলেট থেকে
+								ঢাকাগামী ৬০২ ফ্লাইটে এ ঘটনা ঘটে। ওই ফ্লাইটে ১৪৮ জন যাত্রী ছিলেন। বিষয়‌টি গণমাধ্যমকে
+								নি‌শ্চিত করেছেন সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরের প‌রিচা‌লক হা‌ফিজ আহমদ।
+							</p>
+						</div>
+						<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
+					</div>
+					<div className="border border-solid border-ClGray h-[360px]"> </div>
+					{/* News 4 */}
+					<div className="flex flex-col items-start gap-[16px] w-[296px]">
+						<img src={NC4} alt="" className="w-[296px] h-[166px] object-cover" />
+						<div className="flex flex-col items-start gap-[10px]">
+							<h5 className="text-CBlue hover:text-COrange text-lg font-bold">
+								চুয়াডাঙ্গার গ্রামটিকে বলা হচ্ছে ‘বন্য প্রাণী ও পাখির গ্রাম’, ১৫ ছবিতে তারই প্রমাণ
+							</h5>
+							<p className="line-clamp-3 text-CGray text-sm">
+								সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরে বাংলাদেশ বিমানের এক‌টি ফ্লাইট উড্ডয়নের আগে চাকা
+								ফেটে রানওয়ে বন্ধ হয়ে গেছে। শুক্রবার বেলা সোয়া ১টার দিকে বাংলাদেশ বিমানের সিলেট থেকে
+								ঢাকাগামী ৬০২ ফ্লাইটে এ ঘটনা ঘটে। ওই ফ্লাইটে ১৪৮ জন যাত্রী ছিলেন। বিষয়‌টি গণমাধ্যমকে
+								নি‌শ্চিত করেছেন সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরের প‌রিচা‌লক হা‌ফিজ আহমদ।
+							</p>
+						</div>
+						<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

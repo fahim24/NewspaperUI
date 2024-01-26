@@ -10,6 +10,7 @@ import NotFound from "./Pages/NotFound";
 import EnterTainment from "./components/Entertainment/EnterTainment";
 import Reviews from "./components/Reviews/Reviews";
 import Life from "./components/Life/Life";
+import Login from "./Pages/Login";
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 				<Route path="/jobs" element={<SportsSection />}></Route>
 				<Route path="/others" element={<Life />}></Route>
 				<Route path="/travel" element={<SportsSection />}></Route>
+				<Route path="/login" element={<Login />}></Route>
 				<Route path="*" element={<NotFound />}></Route>
 			</Routes>
 

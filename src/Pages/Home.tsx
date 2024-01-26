@@ -13,7 +13,6 @@ import Ad5 from "../assets/images/ads/ad5.png";
 import Ad7 from "../assets/images/ads/ad7.png";
 import Ad8 from "../assets/images/ads/ad8.png";
 
-import ScrollToTop from "react-scroll-to-top";
 const Home = () => {
 	return (
 		<>
@@ -28,9 +27,8 @@ const Home = () => {
 			<Videos></Videos>
 			<Reviews></Reviews>
 			<img src={Ad8} alt="" className="h-[90px] mx-auto my-[24px] shrink-0" />
-			{/*<Life></Life>
-			<BottomSection></BottomSection>*/}
-			<ScrollToTop smooth />
+			<Life></Life>
+			<BottomSection></BottomSection>
 		</>
 	);
 };

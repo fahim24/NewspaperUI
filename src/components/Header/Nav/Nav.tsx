@@ -8,7 +8,7 @@ const Nav = () => {
 					{/* Nav Link 1 */}
 
 					<div
-						className="py-[6px] text-COrange border-b-2 border-COrange"
+						className="text-CBlack py-[6px] hover:text-COrange hover:border-b-2 hover:border-COrange"
 						title="Go to Bangladesh News"
 					>
 						<Link to="/bangladesh">বাংলাদেশ</Link>
