@@ -16,17 +16,17 @@ import Ad8 from "../assets/images/ads/ad8.png";
 const Home = () => {
 	return (
 		<>
-			<img src={Ad1} alt="aa" className="h-[90px] mx-[auto] my-[16px]" />
+			<img src={Ad1} alt="ads" className="object-fill mx-[auto] my-6" />
 			<TopSection></TopSection>
-			<img src={Ad3} alt="" className="h-[250px] mx-auto my-[24px] shrink-0" />
+			<img src={Ad3} alt="" className="object-fill mx-auto my-6 " />
 			<SportsSection></SportsSection>
-			<img src={Ad5} alt="" className="h-[90px] mx-auto my-[24px] shrink-0" />
+			<img src={Ad5} alt="" className="object-fill mx-auto my-6 " />
 			<EnterTainment></EnterTainment>
-			<img src={Ad7} alt="" className="h-[90px] mx-auto my-[24px] shrink-0" />
+			<img src={Ad7} alt="" className="object-fill mx-auto my-6 " />
 			<PhotoGallery></PhotoGallery>
 			<Videos></Videos>
 			<Reviews></Reviews>
-			<img src={Ad8} alt="" className="h-[90px] mx-auto my-[24px] shrink-0" />
+			<img src={Ad8} alt="" className="object-fill mx-auto my-6 " />
 			<Life></Life>
 			<BottomSection></BottomSection>
 		</>

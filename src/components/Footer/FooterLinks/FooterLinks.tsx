@@ -3,30 +3,30 @@ import Copyright from "../Copyright/Copyright";
 const FooterLinks = () => {
 	return (
 		<section>
-			<div className=" py-[32px] bg-slate-800">
-				<div className="w-[1280px] mx-auto flex flex-col items-start gap-[24px] text-sm text-white">
+			<div className=" py-8 bg-CBlue">
+				<div className="container mx-auto flex flex-col items-start gap-6 text-sm text-white">
 					{/* Site Links */}
 
-					<div className="flex items-start gap-[32px] ">
-						<div className="flex flex-col items-start gap-[10px] w-[187px]">
+					<div className="flex flex-col sm:flex-row items-start gap-x-8 gap-y-2">
+						<div className="flex flex-col items-start gap-2 w-48">
 							<div className="hover:text-orange-400">
-								<a>আমাদের সম্পর্কে</a>
+								<a href="#">আমাদের সম্পর্কে</a>
 							</div>
 							<div className="hover:text-orange-400">
-								<a>যোগাযোগ</a>
+								<a href="#">যোগাযোগ</a>
 							</div>
 						</div>
-						<div className="flex flex-col items-start gap-[10px] w-[187px]">
+						<div className="flex flex-col items-start gap-2 w-48">
 							<div className="hover:text-orange-400 ">
-								<a>বিজ্ঞাপন</a>
+								<a href="#">বিজ্ঞাপন</a>
 							</div>
 							<div className="hover:text-orange-400 ">
-								<a>নীতিমালা</a>
+								<a href="#">নীতিমালা</a>
 							</div>
 						</div>
-						<div className="flex flex-col items-start gap-[10px] w-[187px]">
+						<div className="flex flex-col items-start gap-2 w-48">
 							<div className="hover:text-orange-400 ">
-								<a>গোপনীয়তা নীতি</a>
+								<a href="#">গোপনীয়তা নীতি</a>
 							</div>
 						</div>
 					</div>

@@ -14,7 +14,7 @@ import Login from "./Pages/Login";
 
 function App() {
 	return (
-		<div className="max-w-[1920px]">
+		<div>
 			<Header />
 
 			<Routes>

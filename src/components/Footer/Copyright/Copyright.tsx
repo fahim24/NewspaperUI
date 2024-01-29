@@ -1,6 +1,6 @@
 const Copyright = () => {
 	return (
-		<div className="flex flex-col items-start gap-[2px]">
+		<div className="flex flex-col items-start gap-1">
 			<p>&copy; 2024 generation.com.bd | Powered by: M4Yours IT</p>
 			<p>
 				Copyright: Any unauthorized use or reproduction of Generation content for commercial

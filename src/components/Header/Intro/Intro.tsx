@@ -21,18 +21,18 @@ const Intro = () => {
 	};
 	return (
 		<section>
-			<div className="w-[1280px] mx-auto mt-[10px] h-[82px]">
+			<div className="container mx-auto my-3">
 				<div className="grid grid-cols-[auto_1fr_auto] items-center justify-center">
 					{/* Daily Info */}
 
-					<div className="inline-flex flex-col flex-start gap-[10px]">
-						<div className="flex items-center gap-[15px]">
+					<div className="inline-flex flex-col flex-start gap-2">
+						<div className="flex items-center gap-4">
 							<img src={Menu} alt="Menu" title="Toggle Navbar" />
-							<div className="flex items-center justify-center h-[32px] ">
+							<div className="flex items-center justify-center">
 								<form action="" className="relative mx-auto flex">
 									<input
 										type="search"
-										className="text-xs bg-ClGray peer cursor-pointer relative z-10 h-[32px] w-10   bg-transparent pr-7 outline-none  focus:w-full focus:cursor-text focus:border-ClGray "
+										className="text-xs bg-ClGray peer cursor-pointer relative z-10  w-10   bg-transparent pr-7 outline-none  focus:w-full focus:cursor-text focus:border-ClGray "
 										placeholder="অনুসন্ধান ..."
 									/>
 									<img
@@ -44,41 +44,45 @@ const Intro = () => {
 								</form>
 							</div>
 						</div>
-						<div className="flex items-center gap-[10px] h-[20px]  " title="Today's Date">
+						<div className="flex items-center gap-2   " title="Today's Date">
 							<img src={Date} alt="Calender" />
-							<p className="text-sm text-CBlack leading-7">মঙ্গলবার, ১৬ই জানুয়ারি, ২০২৪</p>
+							<p className="text-sm text-CBlack leading-7 hidden sm:block">
+								মঙ্গলবার, ১৬ই জানুয়ারি, ২০২৪
+							</p>
 						</div>
 					</div>
 					{/* Logo */}
 
 					<div className="flex justify-center">
 						<Link to="/">
-							<img src={Logo} className="h-[50px]" alt="Logo" title="Go to Home" />
+							<img src={Logo} className="object-cover" alt="Logo" title="Go to Home" />
 						</Link>
 					</div>
 					{/* Logs */}
 
-					<div className="inline-flex items-center gap-[15px]  ">
-						<img
-							id="themeChange"
-							src={isDarkOn ? Light : Dark}
-							alt="Theme Change"
-							title="Toggle Dark Mode"
-							onClick={changeImage}
-							className={isDarkOn ? "bg-CBlack" : ""}
-						/>
+					<div className="flex flex-col sm:flex-row items-center gap-4  ">
+						<div className="flex items-center gap-4  ">
+							<img
+								id="themeChange"
+								src={isDarkOn ? Light : Dark}
+								alt="Theme Change"
+								title="Toggle Dark/Light Mode"
+								onClick={changeImage}
+								className={isDarkOn ? "bg-CBlack" : ""}
+							/>
 
-						<div
-							className="flex gap-[4px] h-[30px] items-center px-[15px] py-[5px] border border-solid border-Secondary rounded-[6px] "
-							title="Toggle Language"
-							onClick={changeLang}
-						>
-							<img src={LanIcon} alt="Language Icon" />
-							<p className="text-CBlack text-sm leading-7">{isLang ? "En" : "বাং"}</p>
+							<div
+								className="flex gap-1 items-center px-4 py-1 border border-solid border-ClGray rounded-md "
+								title="Toggle Language"
+								onClick={changeLang}
+							>
+								<img src={LanIcon} alt="Language Icon" />
+								<p className="text-CBlack text-sm leading-7">{isLang ? "En" : "বাং"}</p>
+							</div>
 						</div>
 						<button
-							className="px-[15px] py-[5px] border h-[30px] rounded-[5px] bg-COrange text-white text-center text-xs font-bold"
-							title="Login"
+							className="px-4 py-2 border rounded-md bg-COrange text-white text-center text-xs font-bold"
+							title="Go to Login"
 						>
 							<Link to="/login">লগ ইন</Link>
 						</button>

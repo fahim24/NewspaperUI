@@ -18,7 +18,7 @@ import Ellipse from "../../assets/images/icons/ellipse2.svg";
 const TopSection = () => {
 	return (
 		<section>
-			<div className="w-[1280px] mx-auto">
+			<div className="container mx-auto">
 				<div className="border border-solid border-ClGray w-full mb-[24px]"></div>
 				<div className="flex gap-[16px]">
 					{/* News Section row-1*/}

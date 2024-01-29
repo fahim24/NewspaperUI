@@ -12,16 +12,16 @@ const PhotoGallery = () => {
 			<div className="container mx-auto ">
 				{/* Section Head */}
 
-				<div className="flex justify-center items-center gap-[24px] my-[24px]">
+				<div className="flex justify-center items-center gap-6 ">
 					<div className="border border-solid border-ClGray w-full"> </div>
 					<div className="text-CBlue hover:text-COrange items-center text-2xl font-bold">ছবি</div>
 					<div className="border border-solid border-ClGray w-full"> </div>
 				</div>
 				{/* Section Body */}
-				<div className="flex flex-col lg:flex-row items-start gap-4">
-					<div className="flex flex-row lg:flex-col items-start gap-4">
+				<div className="flex flex-col lg:flex-row items-start gap-4 my-6">
+					<div className="flex flex-col sm:flex-row lg:flex-col items-start gap-4">
 						{/* News 1 */}
-						<div className="relative w-[296px] h-[159px]">
+						<div className="relative w-[296px] h-40">
 							<img className=" w-full h-full object-cover" src={NC2} alt="News Cover" />
 							<div className="absolute w-full h-full top-0 left-0 overlay" />
 							<img
@@ -29,11 +29,14 @@ const PhotoGallery = () => {
 								alt=""
 								className="absolute top-[10px] left-[10px] w-[24px] h-[24px]"
 							/>
-							<h3 className="absolute left-[10px] bottom-[10px] text-white hover:text-COrange text-md font-bold">
+							<h3
+								className="absolute left-[10px] bottom-[10px] text-white hover:text-COrange 
+							text-md font-bold"
+							>
 								ইজতেমার আখেরি মোনাজাত
 							</h3>
 						</div>
-						<div className="border border-solid border-ClGray lg:w-[full]"> </div>
+						<div className="border border-solid border-ClGray w-full sm:w-0 lg:w-full"> </div>
 						{/* News 2 */}
 						<div className="relative w-[296px] h-[159px]">
 							<img className=" w-full h-full object-cover" src={NC3} alt="News Cover" />
@@ -48,9 +51,9 @@ const PhotoGallery = () => {
 							</h3>
 						</div>
 					</div>
-					<div className="border border-solid border-ClGray h-0 md:h-[350px] flex-1"></div>
+					<div className="border border-solid border-ClGray lg:h-[350px] "></div>
 					{/* News 3 */}
-					<div className="relative w-full md:w-[624px] h-[350px] mb-6 md:mb-0">
+					<div className="relative w-full lg:w-[624px] h-[350px] mb-6 md:mb-0">
 						<img className=" w-full h-full object-cover" src={NC1} alt="News Cover" />
 						<div className="absolute w-full h-full top-0 left-0 overlay" />
 						<img src={PicI} alt="" className="absolute top-[20px] left-[20px] w-[24px] h-[24px]" />
@@ -58,9 +61,9 @@ const PhotoGallery = () => {
 							আথিয়া শেঠির গায়ে হলুদ
 						</h3>
 					</div>
-					<div className="border border-solid border-ClGray h-0 md:h-[350px] flex-1"></div>
+					<div className="border border-solid border-ClGray lg:h-[350px] "></div>
 
-					<div className="flex flex-row lg:flex-col items-start gap-4 ">
+					<div className="flex flex-col sm:flex-row lg:flex-col items-start gap-4 ">
 						{/* News 4 */}
 						<div className="relative w-[296px] h-[159px]">
 							<img className=" w-full h-full object-cover" src={NC4} alt="News Cover" />
@@ -74,7 +77,7 @@ const PhotoGallery = () => {
 								গরিবের আটা মাটিতে
 							</h3>
 						</div>
-						<div className="border border-solid border-ClGray w-full "></div>
+						<div className="border border-solid border-ClGray w-full sm:w-0 lg:w-full"></div>
 						{/* News 5 */}
 						<div className="relative w-[296px] h-[159px]">
 							<img className=" w-full h-full object-cover" src={NC5} alt="News Cover" />

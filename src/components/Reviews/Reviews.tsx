@@ -6,25 +6,21 @@ import P4 from "../../assets/images/Logo/person4.jpg";
 const Reviews = () => {
 	return (
 		<section>
-			<div className="w-[1280px] mx-auto ">
+			<div className="container mx-auto ">
 				{/* Section Head */}
 
-				<div className="flex justify-center items-center gap-[24px] my-[24px]">
+				<div className="flex justify-center items-center gap-6 ">
 					<div className="border border-solid border-ClGray w-full"> </div>
 					<div className="text-CBlue hover:text-COrange items-center text-2xl font-bold">মতামত</div>
 					<div className="border border-solid border-ClGray w-full"> </div>
 				</div>
 				{/* Section Body */}
 
-				<div className="flex gap-[32px]">
-					<div className="flex flex-col w-[624px] p-[24px] items-start gap-[16px] border border-solid border-ClGray">
-						<div className="flex items-center gap-[19px] self-stretch">
-							<img
-								src={P1}
-								alt=""
-								className="w-[100px] h-[100px] rounded-[100px] shrink-0 object-cover"
-							/>
-							<div className="flex flex-col items-start gap-[5px]">
+				<div className="flex flex-col lg:flex-row gap-8 my-6">
+					<div className="flex flex-col w-full lg:w-[624px] p-6 items-start gap-4 border border-solid border-ClGray">
+						<div className="flex items-center gap-5 self-stretch">
+							<img src={P1} alt="" className="w-24 h-24 rounded-[6rem] shrink-0 object-cover" />
+							<div className="flex flex-col items-start gap-1">
 								<h4 className="text-COrange font-bold text-xl">ড. মঞ্জুরে খোদা</h4>
 								<p className="text-CBlue">জয়পুরহাট</p>
 							</div>
@@ -43,14 +39,10 @@ const Reviews = () => {
 							২০টি কাভার্ডভ্যান রয়েছে।
 						</p>
 					</div>
-					<div className="inline-flex flex-col items-start gap-[16px]">
-						<div className="flex w-[624px] items-center gap-[16px]">
-							<img
-								src={P2}
-								alt=""
-								className="w-[100px] h-[100px] rounded-[100px] shrink-0 object-cover"
-							/>
-							<div className="flex flex-col items-start gap-[16px]">
+					<div className="inline-flex flex-col items-start gap-4 w-full  lg:w-[624px]">
+						<div className="flex w-full items-center gap-4">
+							<img src={P2} alt="" className="w-24 h-24 rounded-[6rem] shrink-0 object-cover" />
+							<div className="flex flex-col items-start gap-4">
 								<p className="text-CGray text-lg">
 									সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরে বাংলাদেশ বিমানের এক‌টি ফ্লাইট উড্ডয়নের আগে...
 								</p>
@@ -58,13 +50,9 @@ const Reviews = () => {
 							</div>
 						</div>
 						<div className="border border-solid border-ClGray w-full"> </div>
-						<div className="flex w-[624px] items-center gap-[16px]">
-							<img
-								src={P3}
-								alt=""
-								className="w-[100px] h-[100px] rounded-[100px] shrink-0 object-cover"
-							/>
-							<div className="flex flex-col items-start gap-[16px]">
+						<div className="flex w-full items-center gap-4">
+							<img src={P3} alt="" className="w-24 h-24 rounded-[6rem] shrink-0 object-cover" />
+							<div className="flex flex-col items-start gap-4">
 								<p className="text-CGray text-lg">
 									সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরে বাংলাদেশ বিমানের এক‌টি ফ্লাইট উড্ডয়নের আগে...
 								</p>
@@ -72,13 +60,9 @@ const Reviews = () => {
 							</div>
 						</div>
 						<div className="border border-solid border-ClGray w-full"> </div>
-						<div className="flex w-[624px] items-center gap-[16px]">
-							<img
-								src={P4}
-								alt=""
-								className="w-[100px] h-[100px] rounded-[100px] shrink-0 object-cover"
-							/>
-							<div className="flex flex-col items-start gap-[16px]">
+						<div className="flex w-full items-center gap-4">
+							<img src={P4} alt="" className="w-24 h-24 rounded-[6rem] shrink-0 object-cover" />
+							<div className="flex flex-col items-start gap-4">
 								<p className="text-CGray text-lg">
 									সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরে বাংলাদেশ বিমানের এক‌টি ফ্লাইট উড্ডয়নের আগে...
 								</p>

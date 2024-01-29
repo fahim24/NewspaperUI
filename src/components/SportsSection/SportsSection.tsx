@@ -41,7 +41,7 @@ const SportsSection = () => {
 	];
 	return (
 		<section>
-			<div className="w-[1280px] mx-auto ">
+			<div className="container mx-auto ">
 				{/* Section Head */}
 				<div className="flex justify-center items-center gap-[24px] my-[24px]">
 					<div className="border border-solid border-ClGray w-full"> </div>
