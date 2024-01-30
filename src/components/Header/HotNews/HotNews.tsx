@@ -11,25 +11,25 @@ const HotNews = () => {
 
 							<div className="flex item-center gap-2">
 								<img src={Ellipse} alt="ellipse icon" />
-								<p className="text-sm text-CBlack">
+								<a href="#" className="text-sm text-CBlack">
 									জাতীয় নির্বাচনে ভোটারদের উপস্থিতি আরও বাড়বে : ওবায়দুল কাদের
-								</p>
+								</a>
 							</div>
 							{/* News Headline 2 */}
 
 							<div className="flex item-center gap-2">
 								<img src={Ellipse} alt="ellipse icon" />
-								<p className="text-sm text-CBlack">
+								<a href="#" className="text-sm text-CBlack">
 									জাতীয় নির্বাচনে ভোটারদের উপস্থিতি আরও বাড়বে : ওবায়দুল কাদের
-								</p>
+								</a>
 							</div>
 							{/* News Headline 3 */}
 
 							<div className="flex item-center gap-2">
 								<img src={Ellipse} alt="ellipse icon" />
-								<p className="text-sm text-CBlack">
+								<a href="#" className="text-sm text-CBlack">
 									জাতীয় নির্বাচনে ভোটারদের উপস্থিতি আরও বাড়বে : ওবায়দুল কাদের
-								</p>
+								</a>
 							</div>
 						</div>
 					</div>

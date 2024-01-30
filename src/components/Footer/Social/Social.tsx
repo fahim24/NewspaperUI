@@ -32,7 +32,7 @@ const Social = () => {
 								src={TwitterI}
 								alt="Twitter Link"
 								title="Go to Generation Twitter Account"
-								className="object-cover"
+								className="object-cover "
 							/>
 						</a>
 						<a href="https://www.instragram.com/">

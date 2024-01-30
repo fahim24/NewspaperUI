@@ -14,30 +14,21 @@ import NewsBody from "../News/NewsBody";
 import NewsTime from "../News/NewsTime";
 import NewsType2 from "../News/NewsType/NewsType2";
 
-const EnterTainment = () => {
+const EnterTainmentSection = () => {
 	return (
 		<section>
 			<div className="container mx-auto ">
-				{/* Section Head */}
-
-				<div className="flex justify-center items-center gap-6">
-					<div className="border border-solid border-ClGray w-full"> </div>
-					<div className="text-CBlue hover:text-COrange items-center text-2xl font-bold">
-						বিনোদন
-					</div>
-					<div className="border border-solid border-ClGray w-full"> </div>
-				</div>
 				{/* Section Body */}
 
-				<div className="flex flex-col xl:flex-row gap-4 my-6">
+				<div className="flex flex-col xl:flex-row items-center xl:items-start gap-4 my-6">
 					{/* News Section */}
 
-					<div className="flex flex-col gap-4">
+					<div className="flex flex-col items-center gap-4">
 						{/* News Row 1 */}
 
-						<div className="flex flex-col lg:flex-row gap-4">
+						<div className="flex flex-col lg:flex-row items-center lg:items-start gap-4">
 							{/* News 1 */}
-							<div className="inline-flex flex-col items-start gap-4 w-[624px] ">
+							<div className="inline-flex flex-col items-start gap-4 w-full sm:w-[624px] ">
 								<img className="w-full h-[350px] object-cover" src={NC1} />
 								<div className="flex flex-col items-start gap-5 self-stretch">
 									<div className="flex flex-col items-start gap-4 self-stretch">
@@ -53,7 +44,9 @@ const EnterTainment = () => {
 											<NewsTime></NewsTime>
 										</p>
 										<img src={Ellipse} alt="" />
-										<p className="text-sm text-COrange font-bold">বলিউড</p>
+										<a href="#" className="text-sm text-COrange font-bold">
+											বলিউড
+										</a>
 									</div>
 								</div>
 							</div>
@@ -72,11 +65,13 @@ const EnterTainment = () => {
 												<NewsTime></NewsTime>
 											</p>
 											<img src={Ellipse} alt="" />
-											<p className="text-sm text-COrange font-bold">হলিউড</p>
+											<a href="#" className="text-sm text-COrange font-bold">
+												হলিউড
+											</a>
 										</div>
 									</div>
 								</div>
-								<div className="border border-solid border-ClGray w-full"> </div>
+								<div className="border border-solid border-ClGray lg:w-full"> </div>
 								{/* News 3 */}
 
 								<div className="flex flex-col items-start gap-4 w-[296px]">
@@ -90,7 +85,9 @@ const EnterTainment = () => {
 												<NewsTime></NewsTime>
 											</p>
 											<img src={Ellipse} alt="" />
-											<p className="text-sm text-COrange font-bold">টলিউড</p>
+											<a href="#" className="text-sm text-COrange font-bold">
+												টলিউড
+											</a>
 										</div>
 									</div>
 								</div>
@@ -101,10 +98,10 @@ const EnterTainment = () => {
 						<div className="border border-solid border-ClGray w-full"> </div>
 						{/* News Row 2 */}
 
-						<div className="flex flex-wrap gap-4">
+						<div className="flex flex-col sm:flex-row gap-4">
 							{/* News 4*/}
 
-							<div className="flex flex-col item-start gap-4">
+							<div className="flex flex-col item-start gap-4 w-[296px]">
 								<img src={NC4} alt="" className="h-[166px] w-full object-cover" />
 								<NewsType2></NewsType2>
 								<div className="flex items-center gap-2 ">
@@ -112,33 +109,39 @@ const EnterTainment = () => {
 										<NewsTime></NewsTime>
 									</div>
 									<img src={Ellipse} alt="" />
-									<p className="text-sm text-COrange font-bold">হলিউড</p>
+									<a href="#" className="text-sm text-COrange font-bold">
+										হলিউড
+									</a>
 								</div>
 							</div>
 							<div className="border border-solid border-ClGray h-full "></div>
 							{/* News 5*/}
-							<div className="flex flex-col item-start gap-4">
-								<img src={NC5} alt="" className="h-[166px] w-[296px] object-cover" />
+							<div className="flex flex-col item-start gap-4 w-[296px]">
+								<img src={NC5} alt="" className="h-[166px] w-full object-cover" />
 								<NewsType2></NewsType2>
 								<div className="flex items-center gap-2 ">
 									<div className="text-sm text-CGray">
 										<NewsTime></NewsTime>
 									</div>
 									<img src={Ellipse} alt="" />
-									<p className="text-sm text-COrange font-bold">বলিউড</p>
+									<a href="#" className="text-sm text-COrange font-bold">
+										বলিউড
+									</a>
 								</div>
 							</div>
 							<div className="border border-solid border-ClGray h-full "></div>
 							{/* News 6*/}
-							<div className="flex flex-col item-start gap-[16px]">
-								<img src={NC6} alt="" className="h-[166px] w-[296px] object-cover" />
+							<div className="flex sm:hidden lg:flex flex-col item-start gap-4 w-[296px] ">
+								<img src={NC6} alt="" className="h-[166px] w-full object-cover" />
 								<NewsType2></NewsType2>
 								<div className="flex items-center gap-2 ">
 									<div className="text-sm text-CGray">
 										<NewsTime></NewsTime>
 									</div>
 									<img src={Ellipse} alt="" />
-									<p className="text-sm text-COrange font-bold">হলিউড</p>
+									<a href="#" className="text-sm text-COrange font-bold">
+										হলিউড
+									</a>
 								</div>
 							</div>
 						</div>
@@ -245,4 +248,4 @@ const EnterTainment = () => {
 	);
 };
 
-export default EnterTainment;
+export default EnterTainmentSection;

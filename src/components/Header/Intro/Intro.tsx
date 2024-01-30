@@ -27,7 +27,10 @@ const Intro = () => {
 
 					<div className="inline-flex flex-col flex-start gap-2">
 						<div className="flex items-center gap-4">
-							<img src={Menu} alt="Menu" title="Toggle Navbar" />
+							<a href="#">
+								<img src={Menu} alt="Menu" title="Toggle Navbar" />
+							</a>
+
 							<div className="flex items-center justify-center">
 								<form action="" className="relative mx-auto flex">
 									<input
@@ -68,11 +71,11 @@ const Intro = () => {
 								alt="Theme Change"
 								title="Toggle Dark/Light Mode"
 								onClick={changeImage}
-								className={isDarkOn ? "bg-CBlack" : ""}
+								className={` cursor-pointer ${isDarkOn ? "bg-CBlack rounded-full" : ""}`}
 							/>
 
 							<div
-								className="flex gap-1 items-center px-4 py-1 border border-solid border-ClGray rounded-md "
+								className="flex gap-1 items-center px-4 py-1 border border-solid border-ClGray rounded-md cursor-pointer "
 								title="Toggle Language"
 								onClick={changeLang}
 							>

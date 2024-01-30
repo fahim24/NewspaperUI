@@ -3,17 +3,10 @@ import P2 from "../../assets/images/Logo/person2.jpg";
 import P3 from "../../assets/images/Logo/person3.jpg";
 import P4 from "../../assets/images/Logo/person4.jpg";
 
-const Reviews = () => {
+const CommentSection = () => {
 	return (
 		<section>
 			<div className="container mx-auto ">
-				{/* Section Head */}
-
-				<div className="flex justify-center items-center gap-6 ">
-					<div className="border border-solid border-ClGray w-full"> </div>
-					<div className="text-CBlue hover:text-COrange items-center text-2xl font-bold">মতামত</div>
-					<div className="border border-solid border-ClGray w-full"> </div>
-				</div>
 				{/* Section Body */}
 
 				<div className="flex flex-col lg:flex-row gap-8 my-6">
@@ -21,7 +14,9 @@ const Reviews = () => {
 						<div className="flex items-center gap-5 self-stretch">
 							<img src={P1} alt="" className="w-24 h-24 rounded-[6rem] shrink-0 object-cover" />
 							<div className="flex flex-col items-start gap-1">
-								<h4 className="text-COrange font-bold text-xl">ড. মঞ্জুরে খোদা</h4>
+								<h4 className="text-COrange font-bold text-xl">
+									<a href="#">ড. মঞ্জুরে খোদা</a>
+								</h4>
 								<p className="text-CBlue">জয়পুরহাট</p>
 							</div>
 						</div>
@@ -46,7 +41,9 @@ const Reviews = () => {
 								<p className="text-CGray text-lg">
 									সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরে বাংলাদেশ বিমানের এক‌টি ফ্লাইট উড্ডয়নের আগে...
 								</p>
-								<p className="text-COrange">ড. মঞ্জুরে খোদা</p>
+								<p className="text-COrange">
+									<a href="#">ড. মঞ্জুরে খোদা</a>
+								</p>
 							</div>
 						</div>
 						<div className="border border-solid border-ClGray w-full"> </div>
@@ -56,7 +53,9 @@ const Reviews = () => {
 								<p className="text-CGray text-lg">
 									সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরে বাংলাদেশ বিমানের এক‌টি ফ্লাইট উড্ডয়নের আগে...
 								</p>
-								<p className="text-COrange">ড. মঞ্জুরে খোদা</p>
+								<p className="text-COrange">
+									<a href="#">ড. মঞ্জুরে খোদা</a>
+								</p>
 							</div>
 						</div>
 						<div className="border border-solid border-ClGray w-full"> </div>
@@ -66,7 +65,9 @@ const Reviews = () => {
 								<p className="text-CGray text-lg">
 									সিলেট ওসমানী আন্তর্জাতিক বিমানবন্দরে বাংলাদেশ বিমানের এক‌টি ফ্লাইট উড্ডয়নের আগে...
 								</p>
-								<p className="text-COrange">ড. মঞ্জুরে খোদা</p>
+								<p className="text-COrange">
+									<a href="#">ড. মঞ্জুরে খোদা</a>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -76,4 +77,4 @@ const Reviews = () => {
 	);
 };
 
-export default Reviews;
+export default CommentSection;

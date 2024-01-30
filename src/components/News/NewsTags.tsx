@@ -1,5 +1,5 @@
 const NewsTags = () => {
-	return <>খেলাধুলা</>;
+	return <a href="#">খেলাধুলা</a>;
 };
 
 export default NewsTags;

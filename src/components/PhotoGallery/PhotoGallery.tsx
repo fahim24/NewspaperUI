@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NC1 from "../../assets/images/News/newsCover14.jpg";
 import NC2 from "../../assets/images/News/newsCover15.jpg";
 import NC3 from "../../assets/images/News/newsCover16.jpg";
@@ -14,11 +15,13 @@ const PhotoGallery = () => {
 
 				<div className="flex justify-center items-center gap-6 ">
 					<div className="border border-solid border-ClGray w-full"> </div>
-					<div className="text-CBlue hover:text-COrange items-center text-2xl font-bold">ছবি</div>
+					<div className="text-CBlue hover:text-COrange items-center text-2xl font-bold">
+						<Link to="/travel">ছবি</Link>
+					</div>
 					<div className="border border-solid border-ClGray w-full"> </div>
 				</div>
 				{/* Section Body */}
-				<div className="flex flex-col lg:flex-row items-start gap-4 my-6">
+				<div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 my-6">
 					<div className="flex flex-col sm:flex-row lg:flex-col items-start gap-4">
 						{/* News 1 */}
 						<div className="relative w-[296px] h-40">
@@ -29,11 +32,12 @@ const PhotoGallery = () => {
 								alt=""
 								className="absolute top-[10px] left-[10px] w-[24px] h-[24px]"
 							/>
+
 							<h3
 								className="absolute left-[10px] bottom-[10px] text-white hover:text-COrange 
 							text-md font-bold"
 							>
-								ইজতেমার আখেরি মোনাজাত
+								<a href="#">ইজতেমার আখেরি মোনাজাত</a>
 							</h3>
 						</div>
 						<div className="border border-solid border-ClGray w-full sm:w-0 lg:w-full"> </div>
@@ -47,7 +51,7 @@ const PhotoGallery = () => {
 								className="absolute top-[10px] left-[10px] w-[24px] h-[24px]"
 							/>
 							<h3 className="absolute left-[10px] bottom-[10px] text-white hover:text-COrange text-md font-bold">
-								বিএনপি-পুলিশ সংঘর্ষ
+								<a href="#">বিএনপি-পুলিশ সংঘর্ষ</a>
 							</h3>
 						</div>
 					</div>
@@ -58,7 +62,7 @@ const PhotoGallery = () => {
 						<div className="absolute w-full h-full top-0 left-0 overlay" />
 						<img src={PicI} alt="" className="absolute top-[20px] left-[20px] w-[24px] h-[24px]" />
 						<h3 className="absolute left-[20px] bottom-[20px] text-COrange text-2xl font-bold">
-							আথিয়া শেঠির গায়ে হলুদ
+							<a href="#">আথিয়া শেঠির গায়ে হলুদ</a>
 						</h3>
 					</div>
 					<div className="border border-solid border-ClGray lg:h-[350px] "></div>
@@ -74,7 +78,7 @@ const PhotoGallery = () => {
 								className="absolute top-[10px] left-[10px] w-[24px] h-[24px]"
 							/>
 							<h3 className="absolute left-[10px] bottom-[10px] text-white hover:text-COrange text-md font-bold">
-								গরিবের আটা মাটিতে
+								<a href="#">গরিবের আটা মাটিতে</a>
 							</h3>
 						</div>
 						<div className="border border-solid border-ClGray w-full sm:w-0 lg:w-full"></div>
@@ -88,7 +92,7 @@ const PhotoGallery = () => {
 								className="absolute top-[10px] left-[10px] w-[24px] h-[24px]"
 							/>
 							<h3 className="absolute left-[10px] bottom-[10px] text-white hover:text-COrange text-md font-bold">
-								ঝুঁকি নিয়ে পারাপার
+								<a href="#">ঝুঁকি নিয়ে পারাপার</a>
 							</h3>
 						</div>
 					</div>

@@ -43,7 +43,7 @@ const Nav = () => {
 						className="text-CBlack py-2 hover:text-COrange hover:border-b-2 hover:border-COrange"
 						title="Go to Blogs"
 					>
-						<Link to="/opinions">মতামত</Link>
+						<Link to="/comments">মতামত</Link>
 					</div>
 					{/* Nav Link 6 */}
 

@@ -1,18 +1,18 @@
 const Login = () => {
 	return (
-		<section className="w-[1280px] mx-auto flex justify-center">
-			<form className="flex flex-col gap-[16px] mt-[24px]">
+		<section className="container mx-auto flex justify-center">
+			<form className="flex flex-col gap-4 mt-6">
 				<h3 className="text-4xl font-bold text-CBlue text-center">Log In</h3>
 				<p className="text-CGray text-center">Enter your email and password</p>
-				<a className="flex items-center justify-center w-full py-[5px] px-[15px] rounded-[4px] text-white bg-CGray hover:bg-CBlue gap-[16px]">
+				<button className="flex items-center justify-center w-full py-1 px-4 rounded text-white bg-CGray hover:bg-CBlue gap-4">
 					<img
 						className="h-5"
 						src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/motion-tailwind/img/logos/logo-google.png"
 						alt=""
 					/>
 					Log in with Google
-				</a>
-				<div className="flex items-center gap-[8px]">
+				</button>
+				<div className="flex items-center gap-2">
 					<hr className="h-0 border-b border-solid border-ClGray grow" />
 					<p className=" text-CGray">or</p>
 					<hr className="h-0 border-b border-solid border-ClGray grow" />
@@ -24,7 +24,7 @@ const Login = () => {
 					id="email"
 					type="email"
 					placeholder="someone@example.com"
-					className="flex items-center w-full px-[15px] py-[10px] text-sm placeholder:text-CGray bg-ClGray rounded-[5px] text-CBlack"
+					className="flex items-center w-full px-4 py-3 text-sm placeholder:text-CGray bg-ClGray rounded text-CBlack"
 				/>
 				<label htmlFor="password" className="text-sm text-start text-CBlue">
 					Password
@@ -33,10 +33,10 @@ const Login = () => {
 					id="password"
 					type="password"
 					placeholder="Enter a password"
-					className="flex items-center w-full px-[15px] py-[10px] text-sm placeholder:text-CGray bg-ClGray rounded-[5px] text-CBlack"
+					className="flex items-center w-full px-4 py-3 text-sm placeholder:text-CGray bg-ClGray rounded text-CBlack"
 				/>
-				<div className="flex flex-row justify-between gap-[16px]">
-					<label className="relative inline-flex items-center justify-center cursor-pointer gap-[8px]">
+				<div className="flex flex-row justify-between gap-4">
+					<label className="relative inline-flex items-center justify-center cursor-pointer gap-2">
 						<input type="checkbox" value="" className="" />
 						<span className="text-sm  text-CGray">Keep me logged in</span>
 					</label>
@@ -44,10 +44,10 @@ const Login = () => {
 						Forget password?
 					</a>
 				</div>
-				<button className="w-full px-[15px] py-[10px] text-sm font-bold text-white rounded-[5px] hover:bg-CBlue bg-CGray">
+				<button className="w-full px-4 py-2 text-sm font-bold text-white rounded hover:bg-CBlue bg-CGray">
 					Sign In
 				</button>
-				<p className="text-sm flex justify-between gap-[8px] text-CGray">
+				<p className="text-sm flex justify-between gap-2 text-CGray">
 					Not registered yet?
 					<a href="#" className="font-bold text-CGray">
 						Create an Account
