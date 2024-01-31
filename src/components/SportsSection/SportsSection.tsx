@@ -41,82 +41,112 @@ const SportsSection = () => {
 	];
 	return (
 		<section>
-			{/* Section Body */}
-			<div className="flex flex-col xl:flex-row items-center xl:items-start gap-4 my-6">
+			{/* Content Section */}
+			<div className="my-6 grid grid-cols-[1fr] sm:grid-cols-[2fr] md:grid-cols-[3fr] lg:grid-cols-[3fr_auto_1fr] gap-4 items-start">
 				{/* News Section */}
-				<div className="flex flex-col items-center gap-4">
+				<div className="grid grid-rows-[1fr_auto_auto] gap-4">
 					{/* News Row-1 */}
-					<div className="flex flex-col lg:flex-row items-center lg:items-start gap-4">
-						<div className="w-full sm:w-[624px] h-[350px]">
-							<div className="relative w-full h-[350px]">
-								<img className=" w-full h-full object-cover" src={NC1} alt="News Cover" />
-								<div className="absolute w-full h-full top-0 left-0 overlay" />
-								<div className="absolute left-[20px] bottom-[20px] text-white hover:text-COrange text-2xl font-bold leading-9">
-									<NewsHeadline />
-								</div>
-							</div>
-						</div>
-						<div className="border border-solid border-ClGray h-full "></div>
-						<div className="flex flex-col item-start gap-[16px]">
-							<img src={NC8} alt="" className="h-[166px] w-[296px] object-cover" />
-							<div className="flex flex-col items-start gap-[16px] ">
-								<div className=" text-CBlue hover:text-COrange text-xl font-bold w-[296px] line-clamp-2">
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+						{/* News 1 */}
+						<article className="relative w-full h-full sm:col-span-2">
+							<img className=" w-full h-full object-cover" src={NC1} alt="News Cover" />
+							<div className="absolute w-full h-full top-0 left-0 overlay" />
+							<h2 className="absolute left-5 bottom-5 text-white hover:text-COrange text-lg sm:text-2xl font-bold">
+								<NewsHeadline />
+							</h2>
+						</article>
+						{/* Divider */}
+						{/* News 2 */}
+						<article className="flex sm:hidden md:flex flex-col item-start gap-4">
+							{/* News Cover */}
+							<img src={NC8} alt="News Cover" className="h-44 object-cover" />
+							{/* News Content */}
+							<div className="flex flex-col items-start gap-4 ">
+								{/* News Headline */}
+								<h3 className=" text-CBlue hover:text-COrange text-xl font-bold line-clamp-2">
 									<NewsHeadline></NewsHeadline>
-								</div>
-								<div className="w-[296px] text-CGray line-clamp-3">
+								</h3>
+								{/* News Details */}
+								<p className=" text-CGray line-clamp-3">
 									<NewsBody></NewsBody>
-								</div>
-								<div className="flex items-center gap-[8px] ">
-									<div className="text-sm text-CGray">
+								</p>
+								{/* News Footer */}
+								<div className="flex items-center gap-2 ">
+									{/* News Time */}
+									<p className="text-sm text-CGray">
 										<NewsTime></NewsTime>
-									</div>
-									<img src={Ellipse} alt="" />
+									</p>
+									{/* Divider */}
+									<img src={Ellipse} alt="ellipse" />
+									{/* News Tag */}
 									<a href="#" className="text-sm text-COrange font-bold">
 										ফুটবল
 									</a>
 								</div>
 							</div>
-						</div>
+						</article>
 					</div>
-					<div className="border border-solid border-ClGray "></div>
+					{/* Divider */}
+					<div className="border border-solid border-ClGray w-full"></div>
 					{/* News Row-2 */}
-					<div className="flex flex-col sm:flex-row gap-4">
-						<div className="flex flex-col item-start gap-[16px]">
-							<img src={NC5} alt="" className="h-[166px] w-[296px]" />
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+						{/* News 3 */}
+						<div className="flex flex-col item-start gap-4">
+							{/* News Cover */}
+							<img src={NC5} alt="News Cover" className="h-44 object-cover" />
+							{/* News Body */}
 							<NewsType2></NewsType2>
-							<div className="flex items-center gap-[8px] ">
-								<div className="text-sm text-CGray">
+							{/* News Footer */}
+							<div className="flex items-center gap-2">
+								{/* News Time */}
+								<p className="text-sm text-CGray">
 									<NewsTime></NewsTime>
-								</div>
+								</p>
+								{/* Divider */}
 								<img src={Ellipse} alt="" />
+								{/* News Tag */}
 								<a href="#" className="text-sm text-COrange font-bold">
 									ক্রিকেট
 								</a>
 							</div>
 						</div>
-						<div className="border border-solid border-ClGray h-full "></div>
-						<div className="flex flex-col item-start gap-[16px]">
-							<img src={NC6} alt="" className="h-[166px] w-[296px]" />
+						{/* Divider */}
+						{/* News 4 */}
+						<div className="flex flex-col item-start gap-4">
+							{/* News Cover */}
+							<img src={NC6} alt="News Cover" className="h-44 object-cover" />
+							{/* News Body */}
 							<NewsType2></NewsType2>
-							<div className="flex items-center gap-[8px] ">
-								<div className="text-sm text-CGray">
+							{/* News Body */}
+							<div className="flex items-center gap-2 ">
+								{/* News Time */}
+								<p className="text-sm text-CGray">
 									<NewsTime></NewsTime>
-								</div>
-								<img src={Ellipse} alt="" />
+								</p>
+								{/* Divider */}
+								<img src={Ellipse} alt="ellipse" />
+								{/* News Tag */}
 								<a href="#" className="text-sm text-COrange font-bold">
 									ফুটবল
 								</a>
 							</div>
 						</div>
-						<div className="border border-solid border-ClGray h-full "></div>
-						<div className="flex sm:hidden lg:flex flex-col item-start gap-[16px]">
-							<img src={NC7} alt="" className="h-[166px] w-[296px]" />
+						{/* Divider */}
+						{/* News 5 */}
+						<div className="flex sm:hidden md:flex flex-col item-start gap-4">
+							{/* News Cover */}
+							<img src={NC7} alt="News Cover" className="h-44 object-cover" />
+							{/* News Body */}
 							<NewsType2></NewsType2>
-							<div className="flex items-center gap-[8px] ">
-								<div className="text-sm text-CGray">
+							{/* News Footer */}
+							<div className="flex items-center gap-2 ">
+								{/* News Time */}
+								<p className="text-sm text-CGray">
 									<NewsTime></NewsTime>
-								</div>
-								<img src={Ellipse} alt="" />
+								</p>
+								{/* Divider */}
+								<img src={Ellipse} alt="ellipse" />
+								{/* News Tag */}
 								<a href="#" className="text-sm text-COrange font-bold">
 									অলিম্পিক
 								</a>
@@ -124,29 +154,36 @@ const SportsSection = () => {
 						</div>
 					</div>
 				</div>
+				{/* Divider */}
+				<div className="border border-solid border-ClGray h-full"></div>
 				{/* Side Section */}
-
-				<div className="inline-flex flex-col gap-4 w-[296px]">
-					<div className="flex flex-col items-start gap-[16px]">
+				<div className="flex flex-col items-start gap-4 w-full">
+					{/* News Search */}
+					<div className="flex flex-col items-start gap-4 w-full">
+						{/* News Search Header */}
 						<h3 className="text-CBlue font-bold">আমার এলাকার খবর</h3>
+						{/* Divider */}
 						<div className="border border-solid border-ClGray w-full"></div>
-						<div className="flex flex-col item-start gap-[20px]">
-							<div className="flex flex-col item-start gap-[20px]">
-								<div className=" flex items-center justify-center">
-									<div className="relative">
+						{/* News Search Content */}
+						<div className="flex flex-col item-start gap-5 w-full">
+							{/* News Search Options */}
+							<div className="flex flex-col item-start gap-5 w-full">
+								{/* Option 1 */}
+								<div className=" flex items-center justify-center w-full">
+									<div className="relative w-full">
+										{/* Option Button */}
 										<button
-											id="dropdown-button"
-											className="inline-flex justify-between w-[296px] items-start px-[15px] py-[10px] border border-solid border-ClGray rounded-[4px]"
+											className="flex justify-between items-center w-full px-4 py-2 border border-solid border-ClGray rounded gap-4"
 											onClick={handleToggleDropdown1}
 										>
 											<p className="text-CGray text-sm ">বিভাগ</p>
-											<img src={Down} alt="dropdown" className="h-[20px] w-[20px]" />
+											<img src={Down} alt="dropdown" className="" />
 										</button>
+										{/* Option Menu */}
 										<div
-											id="dropdown-menu"
 											className={`${
 												isOpen1 ? "block" : "hidden"
-											} absolute left-0 mt-2 rounded-md bg-white border z-10 w-[296px]`}
+											} absolute left-0 mt-2 rounded-md bg-white border z-10 w-full`}
 										>
 											{/* Dropdown content goes here */}
 											{items.map((item) => (
@@ -161,21 +198,24 @@ const SportsSection = () => {
 										</div>
 									</div>
 								</div>
+								{/* Option 2 */}
 								<div className=" flex items-center justify-center">
-									<div className="relative">
+									<div className="relative w-full">
+										{/* Option Button */}
 										<button
-											id="dropdown-button"
-											className="inline-flex justify-between w-[296px] items-start px-[15px] py-[10px] border border-solid border-ClGray rounded-[4px]"
+											id="dropdown-button2"
+											className="inline-flex justify-between w-full items-start px-4 py-2 border border-solid border-ClGray rounded"
 											onClick={handleToggleDropdown2}
 										>
 											<p className="text-CGray text-sm ">জেলা</p>
-											<img src={Down} alt="dropdown" className="h-[20px] w-[20px]" />
+											<img src={Down} alt="dropdown" className="" />
 										</button>
+										{/* Option Menu */}
 										<div
-											id="dropdown-menu"
+											id="dropdown-menu2"
 											className={`${
 												isOpen2 ? "block" : "hidden"
-											} absolute left-0 mt-2 rounded-md bg-white border z-10 w-[296px]`}
+											} absolute left-0 mt-2 rounded-md bg-white border z-10 w-full`}
 										>
 											{/* Dropdown content goes here */}
 											{items.map((item) => (
@@ -190,21 +230,24 @@ const SportsSection = () => {
 										</div>
 									</div>
 								</div>
+								{/* Option 3 */}
 								<div className=" flex items-center justify-center">
-									<div className="relative">
+									<div className="relative w-full">
+										{/* Option Button */}
 										<button
-											id="dropdown-button"
-											className="inline-flex justify-between w-[296px] items-start px-[15px] py-[10px] border border-solid border-ClGray rounded-[4px]"
+											id="dropdown-button3"
+											className="inline-flex justify-between w-full items-start px-4 py-2 border border-solid border-ClGray rounded"
 											onClick={handleToggleDropdown3}
 										>
 											<p className="text-CGray text-sm ">উপজেলা</p>
-											<img src={Down} alt="dropdown" className="h-[20px] w-[20px]" />
+											<img src={Down} alt="dropdown" className="" />
 										</button>
+										{/* Option Menu */}
 										<div
-											id="dropdown-menu"
+											id="dropdown-menu3"
 											className={`${
 												isOpen3 ? "block" : "hidden"
-											} absolute left-0 mt-2 rounded-md bg-white border z-10 w-[296px]`}
+											} absolute left-0 mt-2 rounded-md bg-white border z-10 w-full`}
 										>
 											{/* Dropdown content goes here */}
 											{items.map((item) => (
@@ -220,13 +263,17 @@ const SportsSection = () => {
 									</div>
 								</div>
 							</div>
-							<button className="flex w-[296px] h-[40px] justify-center items-center gap-[10px] rounded-[4px] bg-COrange text-white	font-bold">
-								<a href="#">খুঁজুন</a>
-							</button>
+							{/* News Search Button */}
+							<a
+								href="#"
+								className="rounded bg-COrange text-white font-bold text-center px-4 py-1 "
+							>
+								খুঁজুন
+							</a>
 						</div>
 					</div>
-
-					<img src={AD4} alt="" className="w-[296px] h-[246px]" />
+					{/* ADS */}
+					<img src={AD4} alt="" className="object-cover mx-auto" />
 				</div>
 			</div>
 		</section>

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Social = () => {
 	return (
 		<section>
-			<div className="container mx-auto py-8">
+			<div className="container mx-auto py-8 px-2.5">
 				<div className="flex items-center justify-between">
 					{/* Logo */}
 
@@ -18,7 +18,7 @@ const Social = () => {
 						</Link>
 					</div>
 					{/* Social Links */}
-					<div className="flex items-start gap-5">
+					<div className="flex flex-col sm:flex-row items-start gap-y-2 gap-x-5">
 						<a href="https://www.facebook.com/">
 							<img
 								src={FacebookI}

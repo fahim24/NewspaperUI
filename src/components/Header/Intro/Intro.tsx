@@ -21,17 +21,17 @@ const Intro = () => {
 	};
 	return (
 		<section>
-			<div className="container mx-auto my-3">
-				<div className="grid grid-cols-[auto_1fr_auto] items-center justify-center">
+			<div className="container mx-auto my-3 px-2.5">
+				<div className="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] items-center justify-center gap-y-8">
 					{/* Daily Info */}
 
 					<div className="inline-flex flex-col flex-start gap-2">
-						<div className="flex items-center gap-4">
+						<div className="flex items-center gap-4 relative">
 							<a href="#">
 								<img src={Menu} alt="Menu" title="Toggle Navbar" />
 							</a>
 
-							<div className="flex items-center justify-center">
+							<div className="flex items-center justify-center absolute left-10">
 								<form action="" className="relative mx-auto flex">
 									<input
 										type="search"
@@ -49,21 +49,19 @@ const Intro = () => {
 						</div>
 						<div className="flex items-center gap-2   " title="Today's Date">
 							<img src={Date} alt="Calender" />
-							<p className="text-sm text-CBlack leading-7 hidden sm:block">
-								মঙ্গলবার, ১৬ই জানুয়ারি, ২০২৪
-							</p>
+							<p className="text-sm text-CBlack leading-7 ">মঙ্গলবার, ১৬ই জানুয়ারি, ২০২৪</p>
 						</div>
 					</div>
 					{/* Logo */}
 
 					<div className="flex justify-center">
 						<Link to="/">
-							<img src={Logo} className="object-cover" alt="Logo" title="Go to Home" />
+							<img src={Logo} className="object-cover " alt="Logo" title="Go to Home" />
 						</Link>
 					</div>
 					{/* Logs */}
 
-					<div className="flex flex-col sm:flex-row items-center gap-4  ">
+					<div className="flex flex-row items-center justify-center gap-4  ">
 						<div className="flex items-center gap-4  ">
 							<img
 								id="themeChange"
@@ -83,12 +81,12 @@ const Intro = () => {
 								<p className="text-CBlack text-sm leading-7">{isLang ? "En" : "বাং"}</p>
 							</div>
 						</div>
-						<button
+						<div
 							className="px-4 py-2 border rounded-md bg-COrange text-white text-center text-xs font-bold"
 							title="Go to Login"
 						>
 							<Link to="/login">লগ ইন</Link>
-						</button>
+						</div>
 					</div>
 				</div>
 			</div>

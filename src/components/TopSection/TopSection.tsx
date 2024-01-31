@@ -18,168 +18,212 @@ import Ellipse from "../../assets/images/icons/ellipse2.svg";
 const TopSection = () => {
 	return (
 		<section>
-			<div className="container mx-auto">
-				<div className="border border-solid border-ClGray w-full my-6"></div>
-				<div className="flex flex-col xl:flex-row gap-4">
-					<div className="flex flex-col gap-[16px] items-center xl:items-start">
-						{/* News Section row-1*/}
-						{/* News 1 */}
-
-						<div className="flex flex-col lg:flex-row gap-[20px]">
-							<div className="flex flex-col items-start order-last lg:order-first gap-[20px]">
-								<div className="flex flex-col items-start gap-[15px] ">
-									<h1 className=" text-CBlue hover:text-COrange text-2xl font-bold  line-clamp-3">
-										<NewsHeadline></NewsHeadline>
-									</h1>
-									<p className=" text-CGray line-clamp-8">
-										<NewsBody></NewsBody>
-									</p>
-								</div>
-								<div className="flex items-center gap-[8px] ">
-									<p className="text-sm text-CGray">
-										<NewsTime></NewsTime>
-									</p>
-									<img src={Ellipse} alt="" />
-									<p className="text-sm text-COrange font-bold">
-										<NewsTags></NewsTags>
-									</p>
-								</div>
+			{/* Divider */}
+			<div className="border border-solid border-ClGray w-full my-6"></div>
+			{/* Content Section */}
+			<div className="grid grid-cols-[1fr] sm:grid-cols-[3fr] lg:grid-cols-[3fr_auto_1fr] gap-4 items-start">
+				{/* News Section */}
+				<div className="grid grid-rows-[auto_auto_1fr_auto_auto] gap-4">
+					{/* News Section row-1*/}
+					{/* News 1 */}
+					<article className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+						{/* News Content */}
+						<div className="flex flex-col items-start gap-5 order-last sm:order-first">
+							{/* News Body */}
+							<div className="flex flex-col items-start gap-6">
+								{/* News Headline */}
+								<h1 className=" text-CBlue hover:text-COrange text-2xl font-bold  line-clamp-3">
+									<NewsHeadline></NewsHeadline>
+								</h1>
+								{/* News Details */}
+								<p className=" text-CGray line-clamp-8">
+									<NewsBody></NewsBody>
+								</p>
 							</div>
-							<img
-								src={NC1}
-								alt="cover"
-								className="h-[350px] object-cover order-first lg:order-last"
-							/>
-						</div>
-						{/* line */}
-
-						<div className="border border-solid border-ClGray w-full "></div>
-
-						{/* News Section row-2*/}
-
-						<div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-							<div className="flex flex-col item-start gap-[16px]">
-								<img src={NC2} alt="" className="h-[166px] w-[296px]" />
-								<NewsType2></NewsType2>
-								<div className="flex items-center gap-[8px] ">
-									<div className="text-sm text-CGray">
-										<NewsTime></NewsTime>
-									</div>
-									<img src={Ellipse} alt="" />
-									<p className="text-sm text-COrange font-bold">
-										<NewsTags></NewsTags>
-									</p>
-								</div>
-							</div>
-							<div className="border border-solid border-ClGray h-full "></div>
-							<div className="flex flex-col item-start gap-[16px]">
-								<img src={NC3} alt="" className="h-[166px] w-[296px]" />
-								<NewsType2></NewsType2>
-								<div className="flex items-center gap-[8px] ">
-									<div className="text-sm text-CGray">
-										<NewsTime></NewsTime>
-									</div>
-									<img src={Ellipse} alt="" />
-									<p className="text-sm text-COrange font-bold">
-										<NewsTags></NewsTags>
-									</p>
-								</div>
-							</div>
-							<div className="border border-solid border-ClGray h-full "></div>
-							<div className="flex sm:hidden lg:flex flex-col item-start gap-[16px]">
-								<img src={NC4} alt="" className="h-[166px] w-[296px]" />
-								<NewsType2></NewsType2>
-								<div className="flex items-center gap-[8px] ">
-									<div className="text-sm text-CGray">
-										<NewsTime></NewsTime>
-									</div>
-									<img src={Ellipse} alt="" />
-									<p className="text-sm text-COrange font-bold">
-										<NewsTags></NewsTags>
-									</p>
-								</div>
+							{/* News Footer */}
+							<div className="flex items-center gap-2 ">
+								{/* News Time */}
+								<p className="text-sm text-CGray">
+									<NewsTime></NewsTime>
+								</p>
+								{/* Divider */}
+								<img src={Ellipse} alt="ellipse" />
+								{/* News Tag */}
+								<p className="text-sm text-COrange font-bold">
+									<NewsTags></NewsTags>
+								</p>
 							</div>
 						</div>
-						<div className="border border-solid border-ClGray w-full "></div>
-
-						{/* News Section row-3*/}
-
-						<div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-							<NewsType3></NewsType3>
-							<div className="border border-solid border-ClGray h-full "></div>
-							<NewsType3></NewsType3>
-							<div className="border border-solid border-ClGray h-full "></div>
-							<div className="block sm:hidden lg:block">
-								<NewsType3></NewsType3>
+						{/* News Cover */}
+						<img
+							src={NC1}
+							alt="news cover"
+							className="col-span-1 sm:col-span-2 object-cover order-first sm:order-last"
+						/>
+					</article>
+					{/* Divider */}
+					<div className="border border-solid border-ClGray w-full "></div>
+					{/* News Section row-2*/}
+					<div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_auto_1fr] md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-4">
+						{/* News 2 */}
+						<article className="flex flex-col item-start gap-4">
+							{/* News Cover */}
+							<img src={NC2} alt="News Cover" className="h-44 object-cover" />
+							{/* News Body */}
+							<NewsType2></NewsType2>
+							{/* News Footer */}
+							<div className="flex items-center gap-2 ">
+								{/* News Time */}
+								<div className="text-sm text-CGray">
+									<NewsTime></NewsTime>
+								</div>
+								{/* Divider */}
+								<img src={Ellipse} alt="ellipse" />
+								{/* News Tag */}
+								<p className="text-sm text-COrange font-bold">
+									<NewsTags></NewsTags>
+								</p>
+							</div>
+						</article>
+						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full sm:h-full"></div>
+						{/* News 3 */}
+						<article className="flex flex-col item-start gap-4">
+							{/* News Cover */}
+							<img src={NC3} alt="News Cover" className="h-44 object-cover" />
+							{/* News Body */}
+							<NewsType2></NewsType2>
+							{/* News Footer */}
+							<div className="flex items-center gap-2 ">
+								{/* News Time */}
+								<div className="text-sm text-CGray">
+									<NewsTime></NewsTime>
+								</div>
+								{/* Divider */}
+								<img src={Ellipse} alt="" />
+								{/* News Tag */}
+								<p className="text-sm text-COrange font-bold">
+									<NewsTags></NewsTags>
+								</p>
+							</div>
+						</article>
+						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full sm:w-0 md:h-full"></div>
+						{/* News 4 */}
+						<div className="flex sm:hidden md:flex flex-col item-start gap-4">
+							{/* News Cover */}
+							<img src={NC4} alt="" className="h-44 object-cover" />
+							{/* News Body */}
+							<NewsType2></NewsType2>
+							{/* News Footer */}
+							<div className="flex items-center gap-2 ">
+								{/* News Time */}
+								<div className="text-sm text-CGray">
+									<NewsTime></NewsTime>
+								</div>
+								{/* Didiver */}
+								<img src={Ellipse} alt="" />
+								{/* News Tag */}
+								<p className="text-sm text-COrange font-bold">
+									<NewsTags></NewsTags>
+								</p>
 							</div>
 						</div>
 					</div>
-
-					<div className="border border-solid border-ClGray "></div>
-
-					{/* Side Navigation*/}
-
-					<div className="flex flex-col items-center xl:items-start gap-4 ">
-						{/* ADS */}
-						<img src={AD2} alt="" className="w-[297px] h-[248px] shrink-0" />
-						<div className="border border-solid border-ClGray "></div>
-
-						{/* Latest News Nav Section */}
-
-						<div className="flex items-start gap-[15px] w-[296px] border-b border-solid border-ClGray">
-							<div className="flex pb-[8px] justify-center items-center gap-[10px] border-b-2 border-solid border-COrange ">
-								<a href="#" className="text-CBlue text-center ">
-									সর্বশেষ
-								</a>
-							</div>
-							<div className="flex pb-[8px] justify-center items-center gap-[10px] hover:border-b-2 border-solid border-COrange ">
-								<a href="#" className="text-CGray hover:text-CBlue text-center ">
-									দিনের সেরা
-								</a>
-							</div>
-							<div className="flex pb-[8px] justify-center items-center gap-[10px] hover:border-b-2 border-solid border-COrange ">
-								<a href="#" className=" text-CGray hover:text-CBlue text-center ">
-									সপ্তাহের সেরা
-								</a>
+					{/* Divider */}
+					<div className="border border-solid border-ClGray w-full "></div>
+					{/* News Section row-3*/}
+					<div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_auto_1fr] md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-4">
+						{/* News 5 */}
+						<NewsType3></NewsType3>
+						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full sm:h-full"></div>
+						{/* News 6 */}
+						<NewsType3></NewsType3>
+						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full sm:w-0 md:h-full"></div>
+						{/* News 7 */}
+						<div className="block sm:hidden md:block">
+							<NewsType3></NewsType3>
+						</div>
+					</div>
+				</div>
+				{/* Divider */}
+				<div className="border border-solid border-ClGray h-full "></div>
+				{/* SideBar*/}
+				<div className="flex flex-col items-start gap-4">
+					{/* ADS */}
+					<img src={AD2} alt="" className="object-cover mx-auto" />
+					{/* Latest News Nav Section */}
+					<div className="flex items-start gap-4 w-full border-b border-t border-solid border-ClGray">
+						{/* Nav Link - 1 */}
+						<a
+							href="#"
+							title="See Latest News"
+							className="py-2 border-b-2 border-solid border-COrange text-CBlue text-center"
+						>
+							সর্বশেষ
+						</a>
+						{/* Nav Link - 2 */}
+						<a
+							href="#"
+							title="See Daily Best News"
+							className=" py-2 hover:border-b-2 border-solid border-COrange text-CGray hover:text-CBlue text-center"
+						>
+							দিনের সেরা
+						</a>
+						{/* Nav Link - 3 */}
+						<a
+							href="#"
+							title="See Weekly Best News"
+							className="py-2 hover:border-b-2 border-solid border-COrange text-CGray hover:text-CBlue text-center"
+						>
+							সপ্তাহের সেরা
+						</a>
+					</div>
+					{/* Latest News Content Section */}
+					<div className="inline-flex flex-col items-start gap-2">
+						{/* News Headline 1 */}
+						<div className="flex flex-col items-start gap-2">
+							<div className="text-CGray text-center text-4xl font-bold ">১</div>
+							<div className="text-COrange text-lg">
+								<NewsHeadline></NewsHeadline>
 							</div>
 						</div>
-
-						{/* Latest News Section */}
-
-						<div className="inline-flex flex-col items-start gap-[10px]">
-							<div className="flex flex-col items-start">
-								<div className="text-CGray text-center text-4xl font-bold leading-[50px]">১</div>
-								<div className="text-COrange text-lg">
-									<NewsHeadline></NewsHeadline>
-								</div>
+						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full"></div>
+						{/* News Headline 2 */}
+						<div className="flex flex-col items-start gap-2">
+							<div className="text-CGray text-center text-4xl font-bold ">২</div>
+							<div className="text-CBlue hover:text-COrange text-lg">
+								<NewsHeadline></NewsHeadline>
 							</div>
-							<div className="border border-solid border-ClGray w-full"></div>
-							<div className="flex flex-col items-start">
-								<div className="text-CGray text-center text-4xl font-bold leading-[50px]">২</div>
-								<div className="text-CBlue hover:text-COrange text-lg">
-									<NewsHeadline></NewsHeadline>
-								</div>
+						</div>
+						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full"></div>
+						{/* News Headline 3 */}
+						<div className="flex flex-col items-start gap-2">
+							<div className="text-CGray text-center text-4xl font-bold ">৩</div>
+							<div className="text-CBlue hover:text-COrange text-lg">
+								<NewsHeadline></NewsHeadline>
 							</div>
-							<div className="border border-solid border-ClGray w-full"></div>
-							<div className="flex flex-col items-start">
-								<div className="text-CGray text-center text-4xl font-bold leading-[50px]">৩</div>
-								<div className="text-CBlue hover:text-COrange text-lg">
-									<NewsHeadline></NewsHeadline>
-								</div>
+						</div>
+						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full"></div>
+						{/* News Headline 4 */}
+						<div className="flex flex-col items-start gap-2">
+							<div className="text-CGray text-center text-4xl font-bold ">৪</div>
+							<div className="text-CBlue hover:text-COrange text-lg">
+								<NewsHeadline></NewsHeadline>
 							</div>
-							<div className="border border-solid border-ClGray w-full"></div>
-							<div className="flex flex-col items-start">
-								<div className="text-CGray text-center text-4xl font-bold leading-[50px]">৪</div>
-								<div className="text-CBlue hover:text-COrange text-lg">
-									<NewsHeadline></NewsHeadline>
-								</div>
-							</div>
-							<div className="border border-solid border-ClGray w-full"></div>
-							<div className="flex flex-col items-start">
-								<div className="text-CGray text-center text-4xl font-bold leading-[50px]">৫</div>
-								<div className="text-CBlue hover:text-COrange text-lg">
-									<NewsHeadline></NewsHeadline>
-								</div>
+						</div>
+						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full"></div>
+						{/* News Headline 5 */}
+						<div className="flex flex-col items-start gap-2">
+							<div className="text-CGray text-center text-4xl font-bold ">৫</div>
+							<div className="text-CBlue hover:text-COrange text-lg">
+								<NewsHeadline></NewsHeadline>
 							</div>
 						</div>
 					</div>

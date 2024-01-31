@@ -4,7 +4,7 @@ const FooterLinks = () => {
 	return (
 		<section>
 			<div className=" py-8 bg-CBlue">
-				<div className="container mx-auto flex flex-col items-start gap-6 text-sm text-white">
+				<div className="container mx-auto flex flex-col items-start gap-6 text-sm text-white px-2.5">
 					{/* Site Links */}
 
 					<div className="flex flex-col sm:flex-row items-start gap-x-8 gap-y-2">
