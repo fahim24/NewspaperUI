@@ -11,6 +11,7 @@ import { useState } from "react";
 const Intro = () => {
 	const [isDarkOn, setIsDarkOn] = useState(false);
 	const [isLang, setIsLang] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
 	const changeImage = () => {
 		setIsDarkOn((prevIsDarkOn) => !prevIsDarkOn);
@@ -19,19 +20,41 @@ const Intro = () => {
 	const changeLang = () => {
 		setIsLang((prevIsLang) => !prevIsLang);
 	};
+
+	const toggleMenu = () => {
+		const nav = document.getElementById("navBar");
+		const menuToggle = document.getElementById("menuToggle");
+
+		if (!isOpen) {
+			nav?.classList.remove("hidden");
+			nav?.classList.add("block");
+			menuToggle?.classList.remove("hidden");
+			menuToggle?.classList.add("flex");
+
+			setIsOpen((prevIsLang) => !prevIsLang);
+		} else {
+			nav?.classList.remove("block");
+			nav?.classList.add("hidden");
+			menuToggle?.classList.remove("flex");
+			menuToggle?.classList.add("hidden");
+
+			setIsOpen((prevIsLang) => !prevIsLang);
+		}
+	};
+
 	return (
 		<section>
 			<div className="container mx-auto my-3 px-2.5">
-				<div className="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] items-center justify-center gap-y-8">
+				<div className="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] items-center justify-center gap-y-4">
 					{/* Daily Info */}
 
-					<div className="inline-flex flex-col flex-start gap-2">
+					<div className="inline-flex flex-col flex-start gap-4">
 						<div className="flex items-center gap-4 relative">
-							<a href="#">
+							<button className="block lg:hidden" onClick={toggleMenu}>
 								<img src={Menu} alt="Menu" title="Toggle Navbar" />
-							</a>
+							</button>
 
-							<div className="flex items-center justify-center absolute left-10">
+							<div className="flex items-center justify-center absolute left-10 lg:left-0">
 								<form action="" className="relative mx-auto flex">
 									<input
 										type="search"
@@ -54,14 +77,17 @@ const Intro = () => {
 					</div>
 					{/* Logo */}
 
-					<div className="flex justify-center">
+					<div className="flex justify-center mb-4 md:mb-0">
 						<Link to="/">
 							<img src={Logo} className="object-cover " alt="Logo" title="Go to Home" />
 						</Link>
 					</div>
 					{/* Logs */}
 
-					<div className="flex flex-row items-center justify-center gap-4  ">
+					<div
+						id="menuToggle"
+						className="hidden md:flex flex-row items-center justify-center gap-4  "
+					>
 						<div className="flex items-center gap-4  ">
 							<img
 								id="themeChange"

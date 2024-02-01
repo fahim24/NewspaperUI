@@ -7,7 +7,7 @@ import NewsHeadline from "../News/NewsHeadline";
 const BottomSection = () => {
 	return (
 		<section>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+			<div className="grid grid-cols-[1fr] md:grid-cols-[1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4 items-end">
 				{/* Section 1 */}
 				<div className="flex flex-col items-start gap-6 ">
 					{/* Section Header */}
@@ -58,6 +58,7 @@ const BottomSection = () => {
 					</div>
 				</div>
 				{/* Divider */}
+				<div className="border border-solid border-ClGray hidden md:block w-[1px] h-[94%]"></div>
 				{/* Section 2 */}
 				<div className="flex flex-col items-start gap-6">
 					{/* Section Header */}
@@ -108,6 +109,7 @@ const BottomSection = () => {
 					</div>
 				</div>
 				{/* Divider */}
+				<div className="border border-solid border-ClGray hidden lg:block w-[1px] h-[94%] "></div>
 				{/* Section 3 */}
 				<div className="flex flex-col items-start gap-6">
 					{/* Section Header */}
@@ -158,6 +160,7 @@ const BottomSection = () => {
 					</div>
 				</div>
 				{/* Divider */}
+				<div className="border border-solid border-ClGray hidden md:block w-[1px] h-[94%]"></div>
 				{/* Section 4 */}
 				<div className="flex flex-col items-start gap-6">
 					{/* Section Header */}

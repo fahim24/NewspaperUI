@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Nav = () => {
 	return (
 		<section className="border-t border-solid border-ClGray">
-			<div className="container mx-auto px-2.5">
-				<div className="flex gap-x-12 flex-wrap items-center justify-center ">
+			<nav id="navBar" className="container mx-auto px-2.5 hidden lg:block">
+				<div className="flex flex-col lg:flex-row  gap-x-12 items-center justify-center ">
 					{/* Nav Link 1 */}
 					<div
 						className="py-2 text-COrange border-b-2 border-COrange"
@@ -77,7 +77,7 @@ const Nav = () => {
 						<Link to="/travel">ভ্রমণ</Link>
 					</div>
 				</div>
-			</div>
+			</nav>
 		</section>
 	);
 };

@@ -7,7 +7,7 @@ const Life = () => {
 	return (
 		<section>
 			{/* Section Body */}
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-6">
+			<div className="grid grid-cols-[1fr] md:grid-cols-[1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4 my-6">
 				{/* News 1 */}
 				<article className="flex flex-col items-start gap-4">
 					{/* News Cover */}
@@ -30,6 +30,7 @@ const Life = () => {
 					<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
 				</article>
 				{/* Divider */}
+				<div className="border border-solid border-ClGray w-full md:w-[1px] md:h-full"></div>
 				{/* News 2 */}
 				<article className="flex flex-col items-start gap-4">
 					{/* News Cover */}
@@ -54,6 +55,7 @@ const Life = () => {
 					<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
 				</article>
 				{/* Divider */}
+				<div className="border border-solid border-ClGray w-full md:col-span-3 lg:col-span-1 lg:h-full lg:w-[1px]"></div>
 				{/* News 3 */}
 				<article className="flex flex-col items-start gap-4">
 					{/* News Cover */}
@@ -76,6 +78,7 @@ const Life = () => {
 					<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
 				</article>
 				{/* Divider */}
+				<div className="border border-solid border-ClGray w-full md:w-[1px] md:h-full"></div>
 				{/* News 4 */}
 				<article className="flex flex-col items-start gap-4">
 					{/* News Cover */}

@@ -6,7 +6,7 @@ import SportsSection from "../components/SportsSection/SportsSection";
 
 const Literature = () => {
 	return (
-		<div className="container mx-auto">
+		<div className="container mx-auto px-2.5">
 			<img src={Ad1} alt="ads" className="object-fill mx-[auto] my-6" />
 			<SectionHeader myHeader={"সাহিত্য"} myLink={"/literature"}></SectionHeader>
 			<div className="container inline-flex pl-3 items-center gap-2 border-l-2 border-solid border-COrange">

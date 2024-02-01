@@ -21,11 +21,11 @@ const EnterTainmentSection = () => {
 
 			<div className="grid grid-cols-1 sm:grid-cols-[2fr] md:grid-cols-[3fr] lg:grid-cols-[3fr_auto_1fr] gap-4 my-6">
 				{/* News Section */}
-				<div className="grid grid-rows-[auto_auto_1fr] gap-4">
+				<div className="flex flex-col gap-4">
 					{/* News Row 1 */}
-					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+					<div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_auto_1fr] md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-4">
 						{/* News 1 */}
-						<div className="inline-flex flex-col items-start gap-4 sm:col-span-2">
+						<div className="inline-flex flex-col items-start gap-4 sm:col-span-3 ">
 							<img className="w-full h-52 sm:h-[350px] object-cover" src={NC1} />
 							<div className="flex flex-col items-start gap-5 ">
 								<div className="flex flex-col items-start gap-4 ">
@@ -48,7 +48,8 @@ const EnterTainmentSection = () => {
 							</div>
 						</div>
 						{/* Divider */}
-						<div className="flex flex-col sm:flex-row md:flex-col items-start sm:col-span-2 md:col-span-1  gap-8">
+						<div className="border border-solid border-ClGray w-full md:h-full"></div>
+						<div className="flex flex-col sm:flex-row md:flex-col items-start  gap-4">
 							{/* News 2 */}
 							<div className="flex flex-col items-start gap-4">
 								<img className="w-full h-40 object-cover" src={NC2} />
@@ -68,6 +69,7 @@ const EnterTainmentSection = () => {
 								</div>
 							</div>
 							{/* Divider */}
+							<div className="border border-solid border-ClGray w-full sm:w-[1px] sm:h-full md:w-full"></div>
 							{/* News 3 */}
 							<div className="flex flex-col items-start gap-4">
 								<img className="w-full h-40 object-cover" src={NC3} />
@@ -107,6 +109,7 @@ const EnterTainmentSection = () => {
 							</div>
 						</div>
 						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full sm:w-[1px] sm:h-full"></div>
 						{/* News 5*/}
 						<div className="flex flex-col item-start gap-4">
 							<img src={NC5} alt="" className="h-40 w-full object-cover" />
@@ -122,6 +125,7 @@ const EnterTainmentSection = () => {
 							</div>
 						</div>
 						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full sm:w-0 md:h-full"></div>
 						{/* News 6*/}
 						<div className="flex sm:hidden md:flex flex-col item-start gap-4">
 							<img src={NC6} alt="" className="h-40 w-full object-cover" />

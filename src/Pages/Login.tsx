@@ -1,6 +1,6 @@
 const Login = () => {
 	return (
-		<section className="container mx-auto flex justify-center">
+		<section className="container mx-auto px-2.5 flex justify-center">
 			<form className="flex flex-col gap-4 mt-6">
 				<h3 className="text-4xl font-bold text-CBlue text-center">Log In</h3>
 				<p className="text-CGray text-center">Enter your email and password</p>

@@ -19,8 +19,8 @@ const PhotoGallery = () => {
 				<div className="border border-solid border-ClGray w-full"> </div>
 			</div>
 			{/* Section Body */}
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-6">
-				<div className="flex flex-col sm:flex-row lg:flex-col col-span-1 sm:col-span-2 lg:col-span-1 items-start gap-8">
+			<div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4 my-6">
+				<div className="flex flex-col sm:flex-row lg:flex-col items-start sm:col-span-3 lg:col-span-1 gap-4">
 					{/* News 1 */}
 					<div className="relative w-full h-40 ">
 						<img className=" w-full h-full object-cover" src={NC2} alt="News Cover" />
@@ -35,6 +35,7 @@ const PhotoGallery = () => {
 						</h3>
 					</div>
 					{/* Divider */}
+					<div className="border border-solid border-ClGray w-full sm:w-[1px] sm:h-full lg:h-[1px] lg:w-full"></div>
 					{/* News 2 */}
 					<div className="relative w-full h-40">
 						<img className=" w-full h-full object-cover" src={NC3} alt="News Cover" />
@@ -46,8 +47,9 @@ const PhotoGallery = () => {
 					</div>
 				</div>
 				{/* Divider */}
+				<div className="border border-solid border-ClGray w-full sm:col-span-3 lg:col-span-1 lg:w-[1px] lg:h-full"></div>
 				{/* News 3 */}
-				<div className="relative w-full h-52 sm:h-[350px] sm:col-span-2">
+				<div className="relative w-full h-52 sm:h-[350px] sm:col-span-3">
 					<img className=" w-full h-full object-cover" src={NC1} alt="News Cover" />
 					<div className="absolute w-full h-full top-0 left-0 overlay" />
 					<img src={PicI} alt="" className="absolute top-5 left-5 w-6 h-6" />
@@ -56,7 +58,9 @@ const PhotoGallery = () => {
 					</h3>
 				</div>
 				{/* Divider */}
-				<div className="flex flex-col sm:flex-row lg:flex-col items-start col-span-1 sm:col-span-2 lg:col-span-1 gap-8 ">
+				<div className="border border-solid border-ClGray w-full sm:col-span-3 lg:col-span-1 lg:w-[1px] lg:h-full"></div>
+
+				<div className="flex flex-col sm:flex-row lg:flex-col items-start sm:col-span-3 lg:col-span-1 gap-4 ">
 					{/* News 4 */}
 					<div className="relative w-full h-40">
 						<img className=" w-full h-full object-cover" src={NC4} alt="News Cover" />
@@ -67,6 +71,7 @@ const PhotoGallery = () => {
 						</h3>
 					</div>
 					{/* Divider */}
+					<div className="border border-solid border-ClGray w-full sm:w-[1px] sm:h-full lg:h-[1px] lg:w-full"></div>
 					{/* News 5 */}
 					<div className="relative w-full h-40">
 						<img className=" w-full h-full object-cover" src={NC5} alt="News Cover" />

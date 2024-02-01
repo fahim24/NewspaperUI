@@ -34,7 +34,7 @@ const SportsSection = () => {
 
 	const items = [
 		{ id: 1, label: "Option 1" },
-		{ id: 2, label: "Option 3" },
+		{ id: 2, label: "Option 2" },
 		{ id: 3, label: "Option 3" },
 		{ id: 4, label: "Option 4" },
 		// Add more items as needed
@@ -44,11 +44,11 @@ const SportsSection = () => {
 			{/* Content Section */}
 			<div className="my-6 grid grid-cols-[1fr] sm:grid-cols-[2fr] md:grid-cols-[3fr] lg:grid-cols-[3fr_auto_1fr] gap-4 items-start">
 				{/* News Section */}
-				<div className="grid grid-rows-[1fr_auto_auto] gap-4">
+				<div className="flex flex-col gap-4">
 					{/* News Row-1 */}
-					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+					<div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_auto_1fr] md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-4">
 						{/* News 1 */}
-						<article className="relative w-full h-full sm:col-span-2">
+						<article className="relative w-full h-full sm:col-span-3 ">
 							<img className=" w-full h-full object-cover" src={NC1} alt="News Cover" />
 							<div className="absolute w-full h-full top-0 left-0 overlay" />
 							<h2 className="absolute left-5 bottom-5 text-white hover:text-COrange text-lg sm:text-2xl font-bold">
@@ -56,6 +56,7 @@ const SportsSection = () => {
 							</h2>
 						</article>
 						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full sm:w-0 md:h-full"></div>
 						{/* News 2 */}
 						<article className="flex sm:hidden md:flex flex-col item-start gap-4">
 							{/* News Cover */}
@@ -89,7 +90,7 @@ const SportsSection = () => {
 					{/* Divider */}
 					<div className="border border-solid border-ClGray w-full"></div>
 					{/* News Row-2 */}
-					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+					<div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_auto_1fr] md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-4">
 						{/* News 3 */}
 						<div className="flex flex-col item-start gap-4">
 							{/* News Cover */}
@@ -111,6 +112,7 @@ const SportsSection = () => {
 							</div>
 						</div>
 						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full sm:h-full"></div>
 						{/* News 4 */}
 						<div className="flex flex-col item-start gap-4">
 							{/* News Cover */}
@@ -132,6 +134,7 @@ const SportsSection = () => {
 							</div>
 						</div>
 						{/* Divider */}
+						<div className="border border-solid border-ClGray w-full sm:w-0 md:h-full"></div>
 						{/* News 5 */}
 						<div className="flex sm:hidden md:flex flex-col item-start gap-4">
 							{/* News Cover */}

@@ -47,7 +47,7 @@ const Videos = () => {
 				<div className="border border-solid border-ClGray w-full"> </div>
 			</div>
 			{/* Section Body */}
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-6">
+			<div className="grid grid-cols-[1fr] md:grid-cols-[1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4 my-6">
 				{/* News 1 */}
 				<div className="flex flex-col items-start gap-4">
 					<div
@@ -55,26 +55,27 @@ const Videos = () => {
 						onMouseOver={handleMouseOver1}
 						onMouseOut={handleMouseOut1}
 					>
-						<img src={NC1} alt="" className="w-full h-full object-cover " />
+						<img src={NC1} alt="" className="w-full h-full object-cover" />
 						<div className="absolute w-full h-full top-0 left-0 overlay2" />
 						<img
 							src={Video}
 							alt=""
-							className={`absolute top-16 left-28 w-16 h-16 cursor-pointer ${
+							className={`absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 cursor-pointer ${
 								isHovered1 ? "animate-pulse" : ""
 							}`}
 						/>
 					</div>
 					<div className="flex flex-col items-start gap-4">
-						<h4 className="text-COrange text-xl font-bold ">
+						<h4 className="text-CBlue hover:text-COrange text-xl font-bold">
 							<a href="#">ঢাকায় বাসাবাড়িতে লাকড়ির চুলায় রান্না কেন</a>
 						</h4>
 						<p className="text-CGray text-sm">২ ঘণ্টা আগে</p>
 					</div>
 				</div>
 				{/* Divider */}
+				<div className="border border-solid border-ClGray w-full md:w-[1px] md:h-full"></div>
 				{/* News 2 */}
-				<div className="flex flex-col justify-center items-start gap-4">
+				<div className="flex flex-col items-start gap-4">
 					<div
 						className="w-full h-44 relative"
 						onMouseOver={handleMouseOver2}
@@ -85,7 +86,7 @@ const Videos = () => {
 						<img
 							src={Video}
 							alt=""
-							className={`absolute top-16 left-28 w-16 h-16 cursor-pointer ${
+							className={`absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 cursor-pointer ${
 								isHovered2 ? "animate-pulse" : ""
 							}`}
 						/>
@@ -98,6 +99,7 @@ const Videos = () => {
 					</div>
 				</div>
 				{/* Divider */}
+				<div className="border border-solid border-ClGray w-full md:col-span-3 lg:col-span-1 lg:h-full lg:w-[1px]"></div>
 				{/* News 3 */}
 				<div className="flex flex-col items-start gap-4">
 					<div
@@ -110,7 +112,7 @@ const Videos = () => {
 						<img
 							src={Video}
 							alt=""
-							className={`absolute top-16 left-28 w-16 h-16 cursor-pointer ${
+							className={`absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 cursor-pointer ${
 								isHovered3 ? "animate-pulse" : ""
 							}`}
 						/>
@@ -123,6 +125,7 @@ const Videos = () => {
 					</div>
 				</div>
 				{/* Divider */}
+				<div className="border border-solid border-ClGray w-full md:w-[1px] md:h-full"></div>
 				{/* News 4 */}
 				<div className="flex flex-col items-start gap-4">
 					<div
@@ -135,7 +138,7 @@ const Videos = () => {
 						<img
 							src={Video}
 							alt=""
-							className={`absolute top-16 left-28 w-16 h-16 cursor-pointer ${
+							className={`absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 cursor-pointer ${
 								isHovered4 ? "animate-pulse" : ""
 							}`}
 						/>
