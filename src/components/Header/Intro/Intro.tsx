@@ -48,7 +48,7 @@ const Intro = () => {
 				<div className="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] items-center justify-center gap-y-4">
 					{/* Daily Info */}
 
-					<div className="inline-flex flex-col flex-start gap-4">
+					<div className="flex flex-row md:flex-col flex-start justify-between gap-4">
 						<div className="flex items-center gap-4 relative">
 							<button className="block lg:hidden" onClick={toggleMenu}>
 								<img src={Menu} alt="Menu" title="Toggle Navbar" />
@@ -72,12 +72,12 @@ const Intro = () => {
 						</div>
 						<div className="flex items-center gap-2   " title="Today's Date">
 							<img src={Date} alt="Calender" />
-							<p className="text-sm text-CBlack leading-7 ">মঙ্গলবার, ১৬ই জানুয়ারি, ২০২৪</p>
+							<p className="text-xs md:text-sm text-CBlack">মঙ্গলবার, ১৬ই জানুয়ারি, ২০২৪</p>
 						</div>
 					</div>
 					{/* Logo */}
 
-					<div className="flex justify-center mb-4 md:mb-0">
+					<div className="flex justify-center mb-4 md:mb-0" onClick={toggleMenu}>
 						<Link to="/">
 							<img src={Logo} className="object-cover " alt="Logo" title="Go to Home" />
 						</Link>
@@ -110,12 +110,100 @@ const Intro = () => {
 						<div
 							className="px-4 py-2 border rounded-md bg-COrange text-white text-center text-xs font-bold"
 							title="Go to Login"
+							onClick={toggleMenu}
 						>
 							<Link to="/login">লগ ইন</Link>
 						</div>
 					</div>
 				</div>
 			</div>
+			<section className="border-t border-solid border-ClGray">
+				<nav id="navBar" className="container mx-auto px-2.5 hidden lg:block">
+					<div className="flex flex-col lg:flex-row  gap-x-12 items-center justify-center ">
+						{/* Nav Link 1 */}
+						<div
+							className="py-2 text-COrange border-b-2 border-COrange"
+							title="Go to Bangladesh News"
+							onClick={toggleMenu}
+						>
+							<Link to="/bangladesh">বাংলাদেশ</Link>
+						</div>
+						{/* Nav Link 2 */}
+						<div
+							className="text-CBlack py-2 hover:text-COrange hover:border-b-2 border-COrange"
+							title="Go to International News"
+							onClick={toggleMenu}
+						>
+							<Link to="/international">আন্তর্জাতিক</Link>
+						</div>
+						{/* Nav Link 3 */}
+						<div
+							className="text-CBlack py-2 hover:text-COrange hover:border-b-2 border-COrange"
+							title="Go to Sports News"
+							onClick={toggleMenu}
+						>
+							<Link to="/sports">খেলাধুলা</Link>
+						</div>
+						{/* Nav Link 4 */}
+						<div
+							className="text-CBlack py-2 hover:text-COrange hover:border-b-2 border-COrange"
+							title="Go to Entertainment News"
+							onClick={toggleMenu}
+						>
+							<Link to="/entertainment">বিনোদন</Link>
+						</div>
+						{/* Nav Link 5 */}
+						<div
+							className="text-CBlack py-2 hover:text-COrange hover:border-b-2 border-COrange"
+							title="Go to Blogs"
+							onClick={toggleMenu}
+						>
+							<Link to="/comments">মতামত</Link>
+						</div>
+						{/* Nav Link 6 */}
+						<div
+							className="text-CBlack py-2 hover:text-COrange hover:border-b-2 border-COrange"
+							title="Go to Religion News"
+							onClick={toggleMenu}
+						>
+							<Link to="/religion">ধর্ম</Link>
+						</div>
+						{/* Nav Link 7 */}
+						<div
+							className="text-CBlack py-2 hover:text-COrange hover:border-b-2 border-COrange"
+							title="Go to Literature News"
+							onClick={toggleMenu}
+						>
+							<a></a>
+							<Link to="/literature">সাহিত্য</Link>
+						</div>
+						{/* Nav Link 8 */}
+						<div
+							className="text-CBlack py-2 hover:text-COrange hover:border-b-2 border-COrange"
+							title="Go to Jobs News"
+							onClick={toggleMenu}
+						>
+							<Link to="/jobs">চাকরি</Link>
+						</div>
+						{/* Nav Link 9 */}
+						<div
+							className="text-CBlack py-2 hover:text-COrange hover:border-b-2 border-COrange"
+							title="Go to Others News"
+							onClick={toggleMenu}
+						>
+							<Link to="/others">বিবিধ</Link>
+						</div>
+						{/* Nav Link 10 */}
+						<div
+							className="text-CBlack py-2 hover:text-COrange hover:border-b-2 border-COrange"
+							title="Go to Travel News"
+							onClick={toggleMenu}
+						>
+							<Link to="/travel">ভ্রমণ</Link>
+						</div>
+					</div>
+				</nav>
+			</section>
 		</section>
 	);
 };

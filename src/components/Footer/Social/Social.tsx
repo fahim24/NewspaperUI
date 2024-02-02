@@ -9,7 +9,7 @@ const Social = () => {
 	return (
 		<section>
 			<div className="container mx-auto py-8 px-2.5">
-				<div className="flex items-center justify-between">
+				<div className="flex flex-col sm:flex-row items-center justify-between gap-y-4">
 					{/* Logo */}
 
 					<div title="Go to Home">
@@ -18,7 +18,7 @@ const Social = () => {
 						</Link>
 					</div>
 					{/* Social Links */}
-					<div className="flex flex-col sm:flex-row items-start gap-y-2 gap-x-5">
+					<div className="flex items-start  gap-5">
 						<a href="https://www.facebook.com/">
 							<img
 								src={FacebookI}
