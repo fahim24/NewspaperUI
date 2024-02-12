@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	font-family: "Noto Sans Bengali UI";
+	font-family: "Noto Sans Bengali UI", "Noto Sans Bengali", sans-serif;
 }
 
 .overlay {

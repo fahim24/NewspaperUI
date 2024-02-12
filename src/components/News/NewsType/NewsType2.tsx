@@ -4,7 +4,7 @@ import NewsHeadline from "../NewsHeadline";
 const NewsType2 = () => {
 	return (
 		<section>
-			<div className="flex flex-col items-start gap-2 ">
+			<div className="flex flex-col items-start gap-2 text-justify">
 				<div className=" text-CBlue hover:text-COrange text-lg font-bold line-clamp-1">
 					<NewsHeadline></NewsHeadline>
 				</div>

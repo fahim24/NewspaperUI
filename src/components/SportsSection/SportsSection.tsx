@@ -16,20 +16,12 @@ import NewsHeadline from "../News/NewsHeadline";
 import { useState } from "react";
 
 const SportsSection = () => {
-	const [isOpen1, setIsOpen1] = useState<boolean>(false);
-	const [isOpen2, setIsOpen2] = useState<boolean>(false);
-	const [isOpen3, setIsOpen3] = useState<boolean>(false);
+	const [isOpen, setIsOpen] = useState([false, false, false]);
 
-	const handleToggleDropdown1 = () => {
-		setIsOpen1(!isOpen1);
-	};
-
-	const handleToggleDropdown2 = () => {
-		setIsOpen2(!isOpen2);
-	};
-
-	const handleToggleDropdown3 = () => {
-		setIsOpen3(!isOpen3);
+	const handleToggleDropdown = (i: number) => {
+		const updatedStates = [...isOpen];
+		updatedStates[i] = !updatedStates[i];
+		setIsOpen(updatedStates);
 	};
 
 	const items = [
@@ -177,7 +169,7 @@ const SportsSection = () => {
 										{/* Option Button */}
 										<button
 											className="flex justify-between items-center w-full px-4 py-2 border border-solid border-ClGray rounded gap-4"
-											onClick={handleToggleDropdown1}
+											onClick={() => handleToggleDropdown(0)}
 										>
 											<p className="text-CGray text-sm ">বিভাগ</p>
 											<img src={Down} alt="dropdown" className="" />
@@ -185,7 +177,7 @@ const SportsSection = () => {
 										{/* Option Menu */}
 										<div
 											className={`${
-												isOpen1 ? "block" : "hidden"
+												isOpen[0] ? "block" : "hidden"
 											} absolute left-0 mt-2 rounded-md bg-white border z-10 w-full`}
 										>
 											{/* Dropdown content goes here */}
@@ -208,7 +200,7 @@ const SportsSection = () => {
 										<button
 											id="dropdown-button2"
 											className="inline-flex justify-between w-full items-start px-4 py-2 border border-solid border-ClGray rounded"
-											onClick={handleToggleDropdown2}
+											onClick={() => handleToggleDropdown(1)}
 										>
 											<p className="text-CGray text-sm ">জেলা</p>
 											<img src={Down} alt="dropdown" className="" />
@@ -217,7 +209,7 @@ const SportsSection = () => {
 										<div
 											id="dropdown-menu2"
 											className={`${
-												isOpen2 ? "block" : "hidden"
+												isOpen[1] ? "block" : "hidden"
 											} absolute left-0 mt-2 rounded-md bg-white border z-10 w-full`}
 										>
 											{/* Dropdown content goes here */}
@@ -240,7 +232,7 @@ const SportsSection = () => {
 										<button
 											id="dropdown-button3"
 											className="inline-flex justify-between w-full items-start px-4 py-2 border border-solid border-ClGray rounded"
-											onClick={handleToggleDropdown3}
+											onClick={() => handleToggleDropdown(2)}
 										>
 											<p className="text-CGray text-sm ">উপজেলা</p>
 											<img src={Down} alt="dropdown" className="" />
@@ -249,7 +241,7 @@ const SportsSection = () => {
 										<div
 											id="dropdown-menu3"
 											className={`${
-												isOpen3 ? "block" : "hidden"
+												isOpen[2] ? "block" : "hidden"
 											} absolute left-0 mt-2 rounded-md bg-white border z-10 w-full`}
 										>
 											{/* Dropdown content goes here */}

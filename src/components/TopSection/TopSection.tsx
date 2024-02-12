@@ -30,7 +30,7 @@ const TopSection = () => {
 						{/* News Content */}
 						<div className="flex flex-col items-start gap-5 order-last sm:order-first">
 							{/* News Body */}
-							<div className="flex flex-col items-start gap-6">
+							<div className="flex flex-col items-start gap-6 text-justify">
 								{/* News Headline */}
 								<h1 className=" text-CBlue hover:text-COrange text-2xl font-bold  line-clamp-3">
 									<NewsHeadline></NewsHeadline>

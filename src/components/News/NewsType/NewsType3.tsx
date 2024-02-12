@@ -7,7 +7,7 @@ import Ellipse from "../../../assets/images/icons/ellipse2.svg";
 
 const NewsType3 = () => {
 	return (
-		<article className="flex flex-col items-start gap-2 ">
+		<article className="flex flex-col items-start gap-2 text-justify">
 			<div className=" text-CBlue hover:text-COrange text-xl font-bold">
 				<NewsHeadline></NewsHeadline>
 			</div>

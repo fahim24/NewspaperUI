@@ -6,34 +6,17 @@ import NC3 from "../../assets/images/News/newsCover21.jpg";
 import { useState } from "react";
 
 const Videos = () => {
-	const [isHovered1, setIsHovered1] = useState(false);
-	const [isHovered2, setIsHovered2] = useState(false);
-	const [isHovered3, setIsHovered3] = useState(false);
-	const [isHovered4, setIsHovered4] = useState(false);
+	const [isHovered, setIsHovered] = useState([false, false, false, false]);
 
-	const handleMouseOver1 = () => {
-		setIsHovered1(true);
+	const handleMouseOver = (i: number) => {
+		const updatedStates = [...isHovered];
+		updatedStates[i] = true;
+		setIsHovered(updatedStates);
 	};
-	const handleMouseOut1 = () => {
-		setIsHovered1(false);
-	};
-	const handleMouseOver2 = () => {
-		setIsHovered2(true);
-	};
-	const handleMouseOut2 = () => {
-		setIsHovered2(false);
-	};
-	const handleMouseOver3 = () => {
-		setIsHovered3(true);
-	};
-	const handleMouseOut3 = () => {
-		setIsHovered3(false);
-	};
-	const handleMouseOver4 = () => {
-		setIsHovered4(true);
-	};
-	const handleMouseOut4 = () => {
-		setIsHovered4(false);
+	const handleMouseOut = (i: number) => {
+		const updatedStates = [...isHovered];
+		updatedStates[i] = false;
+		setIsHovered(updatedStates);
 	};
 
 	return (
@@ -51,17 +34,17 @@ const Videos = () => {
 				{/* News 1 */}
 				<div className="flex flex-col items-start gap-4">
 					<div
-						className="h-44 w-full relative"
-						onMouseOver={handleMouseOver1}
-						onMouseOut={handleMouseOut1}
+						className="h-44 w-full relative vid"
+						onMouseOver={() => handleMouseOver(0)}
+						onMouseOut={() => handleMouseOut(0)}
 					>
 						<img src={NC1} alt="" className="w-full h-full object-cover" />
 						<div className="absolute w-full h-full top-0 left-0 overlay2" />
 						<img
 							src={Video}
 							alt=""
-							className={`absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 cursor-pointer ${
-								isHovered1 ? "animate-pulse" : ""
+							className={`absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 cursor-pointer iA ${
+								isHovered[0] ? "animate-pulse" : ""
 							}`}
 						/>
 					</div>
@@ -78,8 +61,8 @@ const Videos = () => {
 				<div className="flex flex-col items-start gap-4">
 					<div
 						className="w-full h-44 relative"
-						onMouseOver={handleMouseOver2}
-						onMouseOut={handleMouseOut2}
+						onMouseOver={() => handleMouseOver(1)}
+						onMouseOut={() => handleMouseOut(1)}
 					>
 						<img src={NC2} alt="" className="w-full h-full object-cover" />
 						<div className="absolute w-full h-full top-0 left-0 overlay2" />
@@ -87,7 +70,7 @@ const Videos = () => {
 							src={Video}
 							alt=""
 							className={`absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 cursor-pointer ${
-								isHovered2 ? "animate-pulse" : ""
+								isHovered[1] ? "animate-pulse" : ""
 							}`}
 						/>
 					</div>
@@ -104,8 +87,8 @@ const Videos = () => {
 				<div className="flex flex-col items-start gap-4">
 					<div
 						className="h-44 w-full relative"
-						onMouseOver={handleMouseOver3}
-						onMouseOut={handleMouseOut3}
+						onMouseOver={() => handleMouseOver(2)}
+						onMouseOut={() => handleMouseOut(2)}
 					>
 						<img src={NC1} alt="" className="w-full h-full object-cover" />
 						<div className="absolute w-full h-full top-0 left-0 overlay2" />
@@ -113,7 +96,7 @@ const Videos = () => {
 							src={Video}
 							alt=""
 							className={`absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 cursor-pointer ${
-								isHovered3 ? "animate-pulse" : ""
+								isHovered[2] ? "animate-pulse" : ""
 							}`}
 						/>
 					</div>
@@ -130,8 +113,8 @@ const Videos = () => {
 				<div className="flex flex-col items-start gap-4">
 					<div
 						className="w-full h-44 relative"
-						onMouseOver={handleMouseOver4}
-						onMouseOut={handleMouseOut4}
+						onMouseOver={() => handleMouseOver(3)}
+						onMouseOut={() => handleMouseOut(3)}
 					>
 						<img src={NC3} alt="" className="w-full h-full object-cover" />
 						<div className="absolute w-full h-full top-0 left-0 overlay2" />
@@ -139,7 +122,7 @@ const Videos = () => {
 							src={Video}
 							alt=""
 							className={`absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 cursor-pointer ${
-								isHovered4 ? "animate-pulse" : ""
+								isHovered[3] ? "animate-pulse" : ""
 							}`}
 						/>
 					</div>
