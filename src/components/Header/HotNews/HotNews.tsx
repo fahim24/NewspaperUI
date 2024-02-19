@@ -6,7 +6,7 @@ const HotNews = () => {
 				<div className="flex items-start gap-5">
 					<p className="text-sm text-CBlack">শিরোনাম</p>
 					<div className="overflow-hidden">
-						<div className="whitespace-nowrap flex items-start gap-4 animate-text-slide">
+						<div className="whitespace-nowrap flex items-start gap-4 animate-text-slide ">
 							{/* News Headline 1 */}
 
 							<div className="flex item-center gap-2">

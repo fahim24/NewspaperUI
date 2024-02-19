@@ -3,7 +3,7 @@ import Search from "../../../assets/images/icons/search.svg";
 import Date from "../../../assets/images/icons/date.svg";
 import Logo from "../../../assets/images/Logo/logo.png";
 import Dark from "../../../assets/images/icons/dark.svg";
-import Light from "../../../assets/images/icons/Light.svg";
+import Light from "../../../assets/images/icons/light.svg";
 import LanIcon from "../../../assets/images/icons/language.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";

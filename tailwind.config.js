@@ -16,7 +16,7 @@ export default {
 				8: "8",
 			},
 			animation: {
-				"text-slide": "text-slide 25s linear infinite",
+				"text-slide": "text-slide 30s linear infinite",
 			},
 			keyframes: {
 				"text-slide": {

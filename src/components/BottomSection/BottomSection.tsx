@@ -58,7 +58,7 @@ const BottomSection = () => {
 					</div>
 				</div>
 				{/* Divider */}
-				<div className="border border-solid border-ClGray hidden md:block w-[1px] h-[94%]"></div>
+				<div className="border border-solid border-ClGray hidden md:block w-[1px] h-[94%] my-5"></div>
 				{/* Section 2 */}
 				<div className="flex flex-col items-start gap-6">
 					{/* Section Header */}
